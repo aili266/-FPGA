@@ -1,0 +1,1 @@
+"D://bin/python.exe"  "D://scripts/efx_run_pt_unified.py"  "mem_test"  "Trion"  "T35F324"

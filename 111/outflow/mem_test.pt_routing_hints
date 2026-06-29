@@ -1,0 +1,57 @@
+
+# Efinity Interface Routing Info
+# Version: 2025.2.288
+# Date: 2026-06-27 14:07
+
+# Copyright (C) 2013 - 2025 Efinix Inc. All rights reserved.
+
+path {
+	element {routing_blk: "PLL_BL0" routing_pin: "CLKOUT0" }
+	element {routing_blk: "CLKMUX_L" routing_pin: "IN[17]" }
+	element {routing_blk: "CLKMUX_L" routing_pin: "OUT[0]" }
+}
+path {
+	element {routing_blk: "PLL_BL0" routing_pin: "CLKOUT1" }
+	element {routing_blk: "CLKMUX_L" routing_pin: "IN[18]" }
+	element {routing_blk: "CLKMUX_L" routing_pin: "OUT[1]" }
+}
+path {
+	element {routing_blk: "PLL_BL0" routing_pin: "CLKOUT2" }
+	element {routing_blk: "CLKMUX_L" routing_pin: "IN[19]" }
+	element {routing_blk: "CLKMUX_L" routing_pin: "OUT[2]" }
+}
+path {
+	element {routing_blk: "PLL_TR0" routing_pin: "CLKOUT0" }
+	element {routing_blk: "CLKMUX_R" routing_pin: "IN[8]" }
+	element {routing_blk: "CLKMUX_R" routing_pin: "OUT[0]" }
+}
+path {
+	element {routing_blk: "PLL_TR0" routing_pin: "CLKOUT1" }
+	element {routing_blk: "CLKMUX_R" routing_pin: "IN[9]" }
+	element {routing_blk: "CLKMUX_R" routing_pin: "OUT[1]" }
+}
+path {
+	element {routing_blk: "PLL_TR0" routing_pin: "CLKOUT2" }
+	element {routing_blk: "CLKMUX_R" routing_pin: "IN[10]" }
+	element {routing_blk: "CLKMUX_R" routing_pin: "OUT[2]" }
+}
+path {
+	element {routing_blk: "PLL_BR1" routing_pin: "CLKOUT1" }
+	element {routing_blk: "CLKMUX_R" routing_pin: "IN[21]" }
+	element {routing_blk: "CLKMUX_R" routing_pin: "OUT[3]" }
+}
+path {
+	element {routing_blk: "PLL_BR1" routing_pin: "CLKOUT2" }
+	element {routing_blk: "CLKMUX_R" routing_pin: "IN[22]" }
+	element {routing_blk: "CLKMUX_R" routing_pin: "OUT[4]" }
+}
+path {
+	element {routing_blk: "PLL_BR0" routing_pin: "CLKOUT2" }
+	element {routing_blk: "CLKMUX_R" routing_pin: "IN[19]" }
+	element {routing_blk: "CLKMUX_R" routing_pin: "OUT[5]" }
+}
+path {
+	element {routing_blk: "PLL_BR1" routing_pin: "CLKOUT0" }
+	element {routing_blk: "CLKMUX_R" routing_pin: "IN[20]" }
+	element {routing_blk: "CLKMUX_R" routing_pin: "OUT[6]" }
+}

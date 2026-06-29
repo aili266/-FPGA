@@ -1,0 +1,594 @@
+           
+           Efinix FPGA Placement and Routing.
+           Version: 2025.2.288 
+           Compiled: Nov 13 2025.
+           
+           Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+
+           
+           The Tool Is Based on VPR of University of Toronto,
+           a free open source code under MIT license.
+           
+           
+INFO     : Running Placement and Routing for Family "Trion", Device "T35F324" ...
+           
+           ***** Beginning stage Routing graph generation ... *****
+INFO     : Read ipin pattern from D://arch/./routing/ipin_oph.xml
+INFO     : Finished parsing ipin pattern file 'D://arch/./routing/ipin_oph.xdb'.
+INFO     : Finished parsing switch_block file 'D://arch/.\routing\sb_connectivity_subset.xdb'.
+INFO     : BuildGraph process took 2.4532847 seconds [FlowMsg::StageDuration]
+INFO     :     BuildGraph process took 2.25 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : BuildGraph process virtual memory usage: begin = 285.836 MB, end = 624.552 MB, delta = 338.716 MB [FlowMsg::VMUsage]
+INFO     :     BuildGraph process peak virtual memory usage = 624.552 MB [FlowMsg::VMUsage::Peak]
+INFO     : BuildGraph process resident set memory usage: begin = 303.928 MB, end = 643.712 MB, delta = 339.784 MB [FlowMsg::RSSUsage]
+INFO     :     BuildGraph process peak resident set memory usage = 643.712 MB [FlowMsg::RSSUsage::Peak]
+INFO     : check rr_graph process took 0.0999764 seconds [FlowMsg::StageDuration]
+INFO     :     check rr_graph process took 0.09375 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : check rr_graph process virtual memory usage: begin = 624.552 MB, end = 624.552 MB, delta = 0 MB [FlowMsg::VMUsage]
+INFO     :     check rr_graph process peak virtual memory usage = 624.552 MB [FlowMsg::VMUsage::Peak]
+INFO     : check rr_graph process resident set memory usage: begin = 644.484 MB, end = 644.54 MB, delta = 0.056 MB [FlowMsg::RSSUsage]
+INFO     :     check rr_graph process peak resident set memory usage = 644.54 MB [FlowMsg::RSSUsage::Peak]
+INFO     : Generated 1964611 RR nodes and 7295632 RR edges [DBMsg::DatabaseRoutingGraphStats]
+INFO     : This design has 0 global control net(s). See F:/FPGA_NEW/111/outflow\mem_test.route.rpt for details.
+INFO     : Routing graph took 2.657055 seconds [FlowMsg::StageDuration]
+INFO     :     Routing graph took 2.421875 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Routing graph virtual memory usage: begin = 285.668 MB, end = 624.552 MB, delta = 338.884 MB [FlowMsg::VMUsage]
+INFO     :     Routing graph peak virtual memory usage = 624.552 MB [FlowMsg::VMUsage::Peak]
+INFO     : Routing graph resident set memory usage: begin = 303.72 MB, end = 644.612 MB, delta = 340.892 MB [FlowMsg::RSSUsage]
+INFO     :     Routing graph peak resident set memory usage = 644.612 MB [FlowMsg::RSSUsage::Peak]
+           ***** Ending stage Routing graph generation *****
+           
+           ***** Beginning stage routing ... *****
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] No clocks matched 'mipi_clkesc_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] No clocks matched 'mipi_clkcal_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] set_clock_groups: No valid clock(s) found for -group 'mipi_clkesc_i mipi_clkcal_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:21] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:21] No clocks matched 'mipi_pixclk_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:21] set_clock_groups: No valid clock(s) found for -group 'mipi_pixclk_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:21] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:21] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:22] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:22] No clocks matched 'Axi0Clk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:22] set_clock_groups: No valid clock(s) found for -group 'Axi0Clk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:22] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:22] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:23] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:23] No clocks matched 'clk_cmos'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:23] set_clock_groups: No valid clock(s) found for -group 'clk_cmos'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:23] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:23] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] No clocks matched 'hdmi_clk1x_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] No clocks matched 'hdmi_clk5x_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] No clocks matched 'hdmi_clk2x_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] set_clock_groups: No valid clock(s) found for -group 'hdmi_clk1x_i hdmi_clk2x_i hdmi_clk5x_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] No clocks matched 'tx_slowclk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] No clocks matched 'tx_fastclk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] set_clock_groups: No valid clock(s) found for -group 'tx_slowclk tx_fastclk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:29] No valid object(s) found for 'mipi_clkesc_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:29] No valid pin(s) found for clock
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:29] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:33] No valid object(s) found for 'clk_cmos'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:33] No valid pin(s) found for clock
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:33] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:43] No valid object(s) found for 'tx_fastclk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:43] No valid pin(s) found for clock
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:43] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[0]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[2]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:168] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:168] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[0]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[2]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:169] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:169] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[2]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[0]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:174] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:174] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[2]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[0]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:175] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:175] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ERROR[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:178] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:178] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ERROR[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:179] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:179] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ULPS_CLK'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:180] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:180] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ULPS_CLK'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:181] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:181] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ULPS[3]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[0]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[1]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[2]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:182] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:182] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ULPS[0]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[2]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[3]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:183] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:183] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[0]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:188] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:188] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[0]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[2]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:189] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:189] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[0]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:190] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:190] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[0]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[2]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:191] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:191] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_VALID_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:192] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:192] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_VALID_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:193] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:193] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[1]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[0]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[3]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[2]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:194] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:194] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[1]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[0]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[3]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[2]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:195] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:195] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_DATA_i[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:196] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:196] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_DATA_i[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:197] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:197] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ERROR[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:198] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:198] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ERROR[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:199] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:199] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ULPS_CLK'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:200] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:200] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ULPS_CLK'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:201] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:201] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ULPS[0]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[2]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[3]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:202] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:202] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ULPS[3]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[2]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[0]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:203] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:203] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_AREADY_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:237] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:237] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_AREADY_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:238] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:238] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_BID_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:239] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:239] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_BID_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:240] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:240] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_BVALID_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:241] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:241] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_BVALID_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:242] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:242] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RDATA_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:243] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:243] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RDATA_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:244] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:244] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RID_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:245] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:245] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RID_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:246] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:246] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RLAST_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:247] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:247] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RLAST_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:248] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:248] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RRESP_0[1]'
+WARNING  : No ports matched 'DdrCtrl_RRESP_0[0]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:249] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:249] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RRESP_0[0]'
+WARNING  : No ports matched 'DdrCtrl_RRESP_0[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:250] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:250] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RVALID_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:251] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:251] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RVALID_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:252] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:252] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_WREADY_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:253] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:253] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_WREADY_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:254] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:254] Unable to run 'set_input_delay' constraint due to warnings found
+INFO     : SDC file 'F:/FPGA_NEW/111/t35_sc130gs.sdc' parsed successfully.
+INFO     :  ---------      -------     --------------      -------------
+INFO     :  Iteration      Overuse     Crit Path (ns)      Calc Time (s)
+INFO     :  ---------      -------     --------------      -------------
+INFO     :          1        58478              14.16               5.65
+INFO     :          2        10724              14.16                5.2
+INFO     :          3         7147              14.16               4.73
+INFO     :          4         4200              14.16               4.23
+INFO     :          5         2490              14.16                3.4
+INFO     :          6         1665              14.16               2.86
+INFO     :          7         1187              14.16                2.6
+INFO     :          8          682              14.16               1.95
+INFO     :          9          397              14.16                1.7
+INFO     :         10          239              14.16                1.4
+INFO     :         11          153              14.16              0.732
+INFO     :         12           79              14.19              0.586
+INFO     :         13           49              14.19              0.496
+INFO     :         14           31              14.19              0.342
+INFO     :         15           20              14.19              0.303
+INFO     :         16           21              14.19              0.327
+INFO     :         17           18              14.19              0.344
+INFO     :         18           14              14.19              0.288
+INFO     :         19            9              14.19              0.314
+INFO     :         20            6               14.3              0.307
+INFO     :         21           10               14.3               0.27
+INFO     :         22            1               14.3              0.348
+INFO     :         23            1              14.31              0.267
+INFO     :         24            1              14.41              0.275
+INFO     :         25            1               14.3              0.288
+INFO     :         26            0               14.3              0.274
+           
+INFO     : Successfully routed netlist after 26 routing iterations and 273916228 heapops
+INFO     : Completed net delay value cross check successfully.
+           ***** Beginning stage routing check ... *****
+           ***** Ending stage routing check *****
+           
+INFO     : Serial number (magic cookie) for the routing is: 1145512041
+INFO     : Netlist fully routed.
+INFO     : Successfully created FPGA route file 'F:/FPGA_NEW/111/outflow/mem_test.route'
+INFO     : Routing took 44.3726059 seconds [FlowMsg::StageDuration]
+INFO     :     Routing took 45.171875 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Routing virtual memory usage: begin = 624.552 MB, end = 732.244 MB, delta = 107.692 MB [FlowMsg::VMUsage]
+INFO     :     Routing peak virtual memory usage = 732.284 MB [FlowMsg::VMUsage::Peak]
+INFO     : Routing resident set memory usage: begin = 644.612 MB, end = 752.84 MB, delta = 108.228 MB [FlowMsg::RSSUsage]
+INFO     :     Routing peak resident set memory usage = 752.84 MB [FlowMsg::RSSUsage::Peak]
+           ***** Ending stage routing *****
+           
+           ***** Beginning stage final timing analysis ... *****
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] No clocks matched 'mipi_clkesc_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] No clocks matched 'mipi_clkcal_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] set_clock_groups: No valid clock(s) found for -group 'mipi_clkesc_i mipi_clkcal_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:21] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:21] No clocks matched 'mipi_pixclk_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:21] set_clock_groups: No valid clock(s) found for -group 'mipi_pixclk_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:21] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:21] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:22] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:22] No clocks matched 'Axi0Clk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:22] set_clock_groups: No valid clock(s) found for -group 'Axi0Clk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:22] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:22] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:23] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:23] No clocks matched 'clk_cmos'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:23] set_clock_groups: No valid clock(s) found for -group 'clk_cmos'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:23] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:23] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] No clocks matched 'hdmi_clk1x_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] No clocks matched 'hdmi_clk5x_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] No clocks matched 'hdmi_clk2x_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] set_clock_groups: No valid clock(s) found for -group 'hdmi_clk1x_i hdmi_clk2x_i hdmi_clk5x_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] No clocks matched 'tx_slowclk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] No clocks matched 'tx_fastclk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] set_clock_groups: No valid clock(s) found for -group 'tx_slowclk tx_fastclk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:29] No valid object(s) found for 'mipi_clkesc_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:29] No valid pin(s) found for clock
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:29] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:33] No valid object(s) found for 'clk_cmos'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:33] No valid pin(s) found for clock
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:33] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:43] No valid object(s) found for 'tx_fastclk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:43] No valid pin(s) found for clock
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:43] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[0]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:168] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:168] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[0]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[2]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:169] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:169] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[2]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[1]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[0]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:174] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:174] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[0]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[1]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[2]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:175] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:175] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ERROR[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:178] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:178] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ERROR[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:179] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:179] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ULPS_CLK'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:180] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:180] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ULPS_CLK'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:181] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:181] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ULPS[2]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[0]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[3]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:182] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:182] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ULPS[2]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[0]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[3]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:183] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:183] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[0]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[3]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:188] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:188] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[0]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[2]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:189] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:189] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[0]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:190] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:190] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[0]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:191] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:191] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_VALID_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:192] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:192] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_VALID_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:193] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:193] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[0]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[1]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[2]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[3]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:194] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:194] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[0]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[1]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[3]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[2]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:195] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:195] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_DATA_i[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:196] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:196] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_DATA_i[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:197] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:197] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ERROR[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:198] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:198] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ERROR[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:199] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:199] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ULPS_CLK'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:200] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:200] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ULPS_CLK'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:201] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:201] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ULPS[2]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[3]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[1]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[0]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:202] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:202] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ULPS[3]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[0]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[2]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:203] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:203] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_AREADY_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:237] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:237] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_AREADY_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:238] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:238] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_BID_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:239] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:239] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_BID_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:240] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:240] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_BVALID_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:241] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:241] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_BVALID_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:242] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:242] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RDATA_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:243] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:243] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RDATA_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:244] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:244] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RID_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:245] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:245] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RID_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:246] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:246] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RLAST_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:247] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:247] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RLAST_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:248] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:248] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RRESP_0[1]'
+WARNING  : No ports matched 'DdrCtrl_RRESP_0[0]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:249] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:249] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RRESP_0[1]'
+WARNING  : No ports matched 'DdrCtrl_RRESP_0[0]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:250] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:250] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RVALID_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:251] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:251] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RVALID_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:252] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:252] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_WREADY_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:253] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:253] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_WREADY_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:254] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:254] Unable to run 'set_input_delay' constraint due to warnings found
+INFO     : SDC file 'F:/FPGA_NEW/111/t35_sc130gs.sdc' parsed successfully.
+Maximum possible analyzed clocks frequency
+ Clock Name   Period (ns)  Frequency (MHz)     Edge
+mipi_pixclk_i    14.424        69.329         (R-R)
+hdmi_clk1x_i     22.570        44.307         (R-R)
+hdmi_clk2x_i      4.977       200.924         (R-R)
+Axi0Clk           8.236       121.418         (R-R)
+
+Geomean max period: 10.748
+
+Setup (Max) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+ mipi_pixclk_i    mipi_pixclk_i        10.000           -4.424           (R-R)
+ mipi_pixclk_i    hdmi_clk1x_i          0.002           -2.565           (R-R)
+ hdmi_clk1x_i     hdmi_clk1x_i         39.682           17.112           (R-R)
+ hdmi_clk1x_i     hdmi_clk2x_i         19.841           17.241           (R-R)
+ hdmi_clk2x_i     hdmi_clk2x_i         19.841           14.864           (R-R)
+ Axi0Clk          Axi0Clk              10.417            2.181           (R-R)
+
+Hold (Min) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+ mipi_pixclk_i    mipi_pixclk_i        0.000            0.119            (R-R)
+ mipi_pixclk_i    hdmi_clk1x_i         0.000            0.330            (R-R)
+ hdmi_clk1x_i     hdmi_clk1x_i         0.000            0.307            (R-R)
+ hdmi_clk1x_i     hdmi_clk2x_i         0.000            0.307            (R-R)
+ hdmi_clk2x_i     hdmi_clk2x_i         0.000            0.306            (R-R)
+ Axi0Clk          Axi0Clk              0.000            0.307            (R-R)
+
+WARNING  : Clock domain between mipi_pixclk_i (rising) and mipi_pixclk_i (rising) may not meet (slack: -4.424 ns) the setup (max) timing requirement
+WARNING  : Clock domain between mipi_pixclk_i (rising) and hdmi_clk1x_i (rising) may not meet (slack: -2.565 ns) the setup (max) timing requirement
+INFO     : Write Timing Report to "F:/FPGA_NEW/111/outflow\mem_test.timing.rpt" ...
+INFO     : final timing analysis took 4.548616 seconds [FlowMsg::StageDuration]
+INFO     :     final timing analysis took 4.484375 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : final timing analysis virtual memory usage: begin = 732.244 MB, end = 732.244 MB, delta = 0 MB [FlowMsg::VMUsage]
+INFO     :     final timing analysis peak virtual memory usage = 732.284 MB [FlowMsg::VMUsage::Peak]
+INFO     : final timing analysis resident set memory usage: begin = 752.856 MB, end = 753.408 MB, delta = 0.552 MB [FlowMsg::RSSUsage]
+INFO     :     final timing analysis peak resident set memory usage = 753.408 MB [FlowMsg::RSSUsage::Peak]
+           ***** Ending stage final timing analysis *****
+           
+           ***** Beginning stage bitstream generation ... *****
+INFO     : Reading core interface constraints file "F:/FPGA_NEW/111/outflow/mem_test.interface.csv" [DBMsg::CoreInterfaceConstraintsFileReading]
+INFO     : Successfully read core interface constraints file "F:/FPGA_NEW/111/outflow/mem_test.interface.csv" [DBMsg::CoreInterfaceConstraintsFileLoadSuccess]
+INFO     : Finished writing bitstream file F:/FPGA_NEW/111/work_pnr\mem_test.lbf.
+INFO     : Bitstream generation took 0.4889131 seconds [FlowMsg::StageDuration]
+INFO     :     Bitstream generation took 0.5 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Bitstream generation virtual memory usage: begin = 732.244 MB, end = 732.244 MB, delta = 0 MB [FlowMsg::VMUsage]
+INFO     :     Bitstream generation peak virtual memory usage = 732.284 MB [FlowMsg::VMUsage::Peak]
+INFO     : Bitstream generation resident set memory usage: begin = 753.452 MB, end = 754.02 MB, delta = 0.568 MB [FlowMsg::RSSUsage]
+INFO     :     Bitstream generation peak resident set memory usage = 754.02 MB [FlowMsg::RSSUsage::Peak]
+INFO     : The entire flow of EFX_PNR took 98.3654369 seconds [FlowMsg::StageDuration]
+INFO     :     The entire flow of EFX_PNR took 205.59375 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : The entire flow of EFX_PNR virtual memory usage: begin = 20.456 MB, end = 731.508 MB, delta = 711.052 MB [FlowMsg::VMUsage]
+INFO     :     The entire flow of EFX_PNR peak virtual memory usage = 732.284 MB [FlowMsg::VMUsage::Peak]
+INFO     : The entire flow of EFX_PNR resident set memory usage: begin = 24.5 MB, end = 753.348 MB, delta = 728.848 MB [FlowMsg::RSSUsage]
+INFO     :     The entire flow of EFX_PNR peak resident set memory usage = 754.028 MB [FlowMsg::RSSUsage::Peak]

@@ -1,0 +1,20 @@
+sep=\t
+Module Resource Usage Distribution Estimates
+Generated at: Jun 16, 2026 17:55:17
+
+Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module	        FFs	      SRLs	      ADDs	       LUTs	    COMB4s	      RAMs	 DSP/MULTs
+edb_top:edb_top                                             	   1460(0)	   160(0)	   152(0)	   1965(0)	     0(0)	    17(0)	     0(0)	
+ +la0:edb_la_top_e79b76589a9a4b6295de51a7fc21ce88(NUM_PROBES=3,INPUT_PIPE_STAGES=1,UUID=128'b11101000111010011100001010001110001101001110010001001001010011011011100110000110100001011101000001010110101111100100001011100011,PROBE0_WIDTH=32,PROBE1_WIDTH=32,PROBE2_WIDTH=96,PROBE0_TYPE=1,PROBE1_TYPE=1,PROBE2_TYPE=1)	 1373(798)	   160(0)	  152(39)	 1930(436)	     0(0)	    17(0)	     0(0)	
+  +axi_crc_i:edb_adbg_crc32_e79b76589a9a4b6295de51a7fc21ce88	    32(32)	     0(0)	     0(0)	    37(37)	     0(0)	     0(0)	     0(0)	
+  +GEN_PROBE[0].genblk7.genblk3.trigger_cu:compare_unit_e79b76589a9a4b6295de51a7fc21ce88(WIDTH=11'b0100000,PIPE=1)	    67(67)	     0(0)	     0(0)	  152(152)	     0(0)	     0(0)	     0(0)	
+  +GEN_PROBE[1].genblk7.genblk3.trigger_cu:compare_unit_e79b76589a9a4b6295de51a7fc21ce88(WIDTH=11'b0100000,PIPE=1)	    67(67)	     0(0)	     0(0)	  152(152)	     0(0)	     0(0)	     0(0)	
+  +GEN_PROBE[2].genblk7.genblk3.trigger_cu:compare_unit_e79b76589a9a4b6295de51a7fc21ce88(WIDTH=11'b01100000,PIPE=1)	  195(195)	     0(0)	     0(0)	  443(443)	     0(0)	     0(0)	     0(0)	
+  +trigger_tu:trigger_unit_e79b76589a9a4b6295de51a7fc21ce88(WIDTH=32'b011,PIPE=1)	      1(1)	     0(0)	     0(0)	      5(5)	     0(0)	     0(0)	     0(0)	
+  +trigger_skipper_n:trigger_skipper_e79b76589a9a4b6295de51a7fc21ce88	    65(65)	     0(0)	   63(63)	  204(204)	     0(0)	     0(0)	     0(0)	
+  +la_biu_inst:la_biu_e79b76589a9a4b6295de51a7fc21ce88(CAPTURE_WIDTH=32'b010100000)	   148(96)	   160(0)	    50(0)	  501(243)	     0(0)	    17(0)	     0(0)	
+   +fifo_with_read_inst:fifo_with_read_e79b76589a9a4b6295de51a7fc21ce88(DATA_WIDTH=32'b010100001,PIPE=0)	    52(52)	 160(160)	   50(50)	   258(67)	     0(0)	    17(0)	     0(0)	
+    +transcode_write_addr:fifo_address_trancode_unit_e79b76589a9a4b6295de51a7fc21ce88(PIPE=0)	      0(0)	     0(0)	     0(0)	    31(31)	     0(0)	     0(0)	     0(0)	
+    +simple_dual_port_ram_inst:edb_simple_dual_port_ram_e79b76589a9a4b6295de51a7fc21ce88(DATA_WIDTH=32'b010100001,ADDR_WIDTH=10,RAM_INIT_FILE="")	      0(0)	     0(0)	     0(0)	  160(160)	     0(0)	   17(17)	     0(0)	
+ +debug_hub_inst:debug_hub_e79b76589a9a4b6295de51a7fc21ce88 	    87(87)	     0(0)	     0(0)	    35(35)	     0(0)	     0(0)	     0(0)	

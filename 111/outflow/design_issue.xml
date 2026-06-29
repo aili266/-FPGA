@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<efxpt:issue_info xmlns:efxpt="http://www.efinixinc.com/peri_design_db"><efxpt:issue instance_name="DdrCtrl" instance_type="ddr" severity="warning" rule_name="ddr_rule_memory_settings" message="For the 800D speed grade, CL/CWL values are below the minimum. (Suggested minimum value: CL=6, CWL=7)" /></efxpt:issue_info>

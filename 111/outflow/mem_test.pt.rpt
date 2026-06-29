@@ -1,0 +1,724 @@
+
+Efinity Interface Designer Report
+Version: 2025.2.288
+Date: 2026-06-27 14:07
+
+Copyright (C) 2013 - 2025 Efinix Inc. All rights reserved.
+
+Device: T35F324
+Project: mem_test
+
+Package: 324-ball FBGA (final)
+Timing Model: C4 (final)
+Configuration Mode: active (x1)
+
+---------- Table of Contents (begin) ----------
+   1. Periphery Usage Summary
+   2. Generated Output Files
+   3. I/O Banks Summary
+   4. Global Connection Summary
+   5. Clock Region Usage Summary
+   6. Dual-Function Configuration Pin Usage
+   7. GPIO Usage Summary
+   8. PLL Usage Summary
+   9. LVDS Rx Usage Summary
+   10. LVDS Tx Usage Summary
+   11. MIPI Rx Usage Summary
+   12. MIPI Tx Usage Summary
+   13. Clock Mux Usage Summary
+   14. Configuration Control Usage Summary
+   15. JTAG Usage Summary
+   16. DDR Usage Summary
+   17. Design Issues
+---------- Table of Contents (end) ------------
+
+---------- 1. Periphery Usage Summary (begin) ----------
+clkmux: 2 / 2 (100.0%)
+control: 0 / 1 (0.0%)
+ddr: 1 / 1 (100.0%)
+gpio: 10 / 38 (26.32%)
+jtag: 0 / 4 (0.0%)
+lvds_bg: 2 / 2 (100.0%)
+lvds_rx: 4.0 / 26 (15.38%)
+	gpio: 8
+lvds_tx: 4 / 20 (20.0%)
+	lvds: 4
+mipi_rx: 2 / 2 (100.0%)
+mipi_tx: 0 / 2 (0.0%)
+pll: 4 / 7 (57.14%)
+---------- Periphery Usage Summary (end) ----------
+
+---------- 2. Generated Output Files (begin) ----------
+Interface Configuration: mem_test.interface.csv
+Peripheral Block Configuration: mem_test.lpf
+Pinout Report: mem_test.pinout.rpt
+Pinout CSV: mem_test.pinout.csv
+Timing Report: mem_test.pt_timing.rpt
+Timing SDC Template: mem_test.pt.sdc
+Verilog Template: mem_test_template.v
+Option Register File: mem_test_or.ini
+---------- Generated Output Files (end) ----------
+
+---------- 3. I/O Banks Summary (begin) ----------
+
++----------+-------------+
+| I/O Bank | I/O Voltage |
++----------+-------------+
+|    1A    |    3.3 V    |
+|  1B_1C   |    3.3 V    |
+|  1D_1E   |    3.3 V    |
+|    2A    |    3.3 V    |
+|    2B    |    3.3 V    |
+|    2C    |    3.3 V    |
+|    3A    |    1.2 V    |
+|    3B    |    1.2 V    |
+| 3C_TR_BR |    3.3 V    |
+|    4A    |    3.3 V    |
+|    4B    |    3.3 V    |
+|    BL    |    1.2 V    |
++----------+-------------+
+
+---------- I/O Banks Summary (end) ----------
+
+---------- 4. Global Connection Summary (begin) ----------
+
++---------------+-----------------+------+
+|    Pin Name   |     Resource    | Type |
++---------------+-----------------+------+
+|    Axi0Clk    | PLL_BR0.CLKOUT0 | GCLK |
+|    Axi0Clk    | PLL_TR0.CLKOUT0 | GCLK |
+|    clk_cmos   | PLL_BR0.CLKOUT2 | GCLK |
+|  hdmi_clk1x_i | PLL_BR1.CLKOUT0 | GCLK |
+|  hdmi_clk2x_i | PLL_BR1.CLKOUT1 | GCLK |
+|  hdmi_clk5x_i | PLL_BR1.CLKOUT2 | GCLK |
+| mipi_clkcal_i | PLL_BL0.CLKOUT1 | GCLK |
+| mipi_clkesc_i | PLL_BL0.CLKOUT0 | GCLK |
+| mipi_pixclk_i | PLL_BL0.CLKOUT2 | GCLK |
+|   tx_fastclk  | PLL_TR0.CLKOUT2 | GCLK |
+|   tx_slowclk  | PLL_TR0.CLKOUT1 | GCLK |
++---------------+-----------------+------+
+
+---------- Global Connection Summary (end) ----------
+
+---------- 5. Clock Region Usage Summary (begin) ----------
+
++--------------+----------------+
+| Clock Region | Used/Available |
++--------------+----------------+
+|      B       |      3/16      |
+|      L0      |      0/4       |
+|      L1      |      0/4       |
+|      L3      |      0/4       |
+|      L4      |      0/4       |
+|      L5      |      0/4       |
+|      R0      |      1/4       |
+|      R1      |      0/4       |
+|      R3      |      0/4       |
+|      R4      |      2/4       |
+|      R5      |      2/4       |
+|      T       |      0/16      |
++--------------+----------------+
+
+---------- Clock Region Usage Summary (end) ----------
+
+---------- 6. Dual-Function Configuration Pin Usage (begin) ----------
+
++---------------+----------+
+| Instance Name | Function |
++---------------+----------+
+|    hdmi_tx0   |  CDI20   |
+|    hdmi_tx0   |  CDI21   |
+|    hdmi_tx1   |  CDI22   |
+|    hdmi_tx1   |  CDI23   |
+|    hdmi_tx2   |  CDI24   |
+|    hdmi_tx2   |  CDI25   |
+|  led_data[0]  |   CDI2   |
+|  led_data[3]  |   CDI6   |
+|  led_data[4]  |   CDI3   |
+|  led_data[5]  |   CDI5   |
+|  led_data[6]  |   CDI7   |
+|  led_data[7]  |   CDI4   |
++---------------+----------+
+
+---------- Dual-Function Configuration Pin Usage (end) ----------
+
+---------- 7. GPIO Usage Summary (begin) ----------
+
+Global Unused Setting: input with weak pullup
+
++----------------+-------------+--------+----------+--------------+----------+----------------------+-------------------+-------------+
+| Instance Name  |   Resource  |  Mode  | Register | Clock Region | I/O Bank |     I/O Standard     |      Pad Name     | Package Pin |
++----------------+-------------+--------+----------+--------------+----------+----------------------+-------------------+-------------+
+|  AxiPllClkIn   |  GPIOR_118  | input  |          |              | 3C_TR_BR | 3.3 V LVTTL / LVCMOS |  GPIOR_118_PLLIN0 |      C9     |
+|  DdrPllClkIn   |  GPIOR_138  | input  |          |              | 3C_TR_BR | 3.3 V LVTTL / LVCMOS |  GPIOR_138_PLLIN0 |      U8     |
+|  led_data[0]   |   GPIOL_14  | output |          |              |  1B_1C   | 3.3 V LVTTL / LVCMOS |   GPIOL_14_CDI2   |     K14     |
+|  led_data[1]   |   GPIOL_15  | output |          |              |  1B_1C   | 3.3 V LVTTL / LVCMOS |  GPIOL_15_PLLIN0  |     L14     |
+|  led_data[2]   |   GPIOL_17  | output |          |              |  1B_1C   | 3.3 V LVTTL / LVCMOS |  GPIOL_17_EXTFB0  |     L15     |
+|  led_data[3]   |   GPIOL_22  | output |          |              |  1B_1C   | 3.3 V LVTTL / LVCMOS |   GPIOL_22_CDI6   |     L16     |
+|  led_data[4]   |   GPIOL_16  | output |          |              |  1B_1C   | 3.3 V LVTTL / LVCMOS |   GPIOL_16_CDI3   |     K18     |
+|  led_data[5]   |   GPIOL_20  | output |          |              |  1B_1C   | 3.3 V LVTTL / LVCMOS |   GPIOL_20_CDI5   |     L18     |
+|  led_data[6]   |   GPIOL_24  | output |          |              |  1B_1C   | 3.3 V LVTTL / LVCMOS |   GPIOL_24_CDI7   |     L17     |
+|  led_data[7]   |   GPIOL_18  | output |          |              |  1B_1C   | 3.3 V LVTTL / LVCMOS |   GPIOL_18_CDI4   |     M18     |
+|  mipi0_scl_io  | GPIOT_RXP08 | inout  |          |              |    2A    | 3.3 V LVTTL / LVCMOS | GPIOT_RXP08_CLKP0 |     E16     |
+|  mipi0_sda_io  | GPIOT_RXN05 | inout  |          |              |    2A    | 3.3 V LVTTL / LVCMOS |    GPIOT_RXN05    |     D12     |
+|  mipi1_scl_io  | GPIOT_RXP06 | inout  |          |              |    2A    | 3.3 V LVTTL / LVCMOS |    GPIOT_RXP06    |     E13     |
+|  mipi1_sda_io  | GPIOT_RXN08 | inout  |          |              |    2A    | 3.3 V LVTTL / LVCMOS | GPIOT_RXN08_CLKN0 |     F16     |
+| mipi_trig_o[0] | GPIOT_RXN06 | output |          |              |    2A    | 3.3 V LVTTL / LVCMOS |    GPIOT_RXN06    |     F13     |
+| mipi_trig_o[1] | GPIOT_RXP05 | output |          |              |    2A    | 3.3 V LVTTL / LVCMOS |    GPIOT_RXP05    |     E12     |
+|    uart_rxd    | GPIOT_RXN25 | input  |          |              |    2C    | 3.3 V LVTTL / LVCMOS | GPIOT_RXN25_CLKN2 |      A9     |
+|    uart_txd    | GPIOT_RXP25 | output |          |              |    2C    | 3.3 V LVTTL / LVCMOS | GPIOT_RXP25_CLKP2 |      B9     |
++----------------+-------------+--------+----------+--------------+----------+----------------------+-------------------+-------------+
+
+
+Input GPIO Configuration:
+=========================
+
++---------------+-----------+---------------------+-----------------+---------------+-----------------+------+
+| Instance Name | Input Pin | Alternate Input Pin | Input Clock Pin |  Pull Up/Down | Schmitt Trigger | DDIO |
++---------------+-----------+---------------------+-----------------+---------------+-----------------+------+
+|  AxiPllClkIn  |           |     AxiPllClkIn     |                 | weak pulldown |      Enable     | none |
+|  DdrPllClkIn  |           |     DdrPllClkIn     |                 | weak pulldown |      Enable     | none |
+|    uart_rxd   |  uart_rxd |                     |                 |  weak pullup  |     Disable     |      |
++---------------+-----------+---------------------+-----------------+---------------+-----------------+------+
+
+Output GPIO Configuration:
+==========================
+
++----------------+----------------+------------------+----------------+-----------+------+
+| Instance Name  |   Output Pin   | Output Clock Pin | Drive Strength | Slew Rate | DDIO |
++----------------+----------------+------------------+----------------+-----------+------+
+|  led_data[0]   |  led_data[0]   |                  |       1        |  Disable  | none |
+|  led_data[1]   |  led_data[1]   |                  |       1        |  Disable  | none |
+|  led_data[2]   |  led_data[2]   |                  |       1        |  Disable  | none |
+|  led_data[3]   |  led_data[3]   |                  |       1        |  Disable  | none |
+|  led_data[4]   |  led_data[4]   |                  |       1        |  Disable  | none |
+|  led_data[5]   |  led_data[5]   |                  |       1        |  Disable  | none |
+|  led_data[6]   |  led_data[6]   |                  |       1        |  Disable  | none |
+|  led_data[7]   |  led_data[7]   |                  |       1        |  Disable  | none |
+| mipi_trig_o[0] | mipi_trig_o[0] |                  |       1        |  Disable  |      |
+| mipi_trig_o[1] | mipi_trig_o[1] |                  |       1        |  Disable  |      |
+|    uart_txd    |    uart_txd    |                  |       1        |  Disable  |      |
++----------------+----------------+------------------+----------------+-----------+------+
+
+Inout GPIO Configuration:
+=========================
+
++---------------+-------------+---------------------+-----------------+--------------+-----------------+------------+-------------+--------------+------------------+----------------+-----------+-------------+
+| Instance Name |  Input Pin  | Alternate Input Pin | Input Clock Pin | Pull Up/Down | Schmitt Trigger | Input DDIO |  Output Pin |    OE Pin    | Output Clock Pin | Drive Strength | Slew Rate | Output DDIO |
++---------------+-------------+---------------------+-----------------+--------------+-----------------+------------+-------------+--------------+------------------+----------------+-----------+-------------+
+|  mipi0_scl_io | mipi0_scl_i |                     |                 | weak pullup  |     Disable     |            | mipi0_scl_o | mipi0_scl_oe |                  |       1        |  Disable  |             |
+|  mipi0_sda_io | mipi0_sda_i |                     |                 | weak pullup  |     Disable     |            | mipi0_sda_o | mipi0_sda_oe |                  |       1        |  Disable  |             |
+|  mipi1_scl_io | mipi1_scl_i |                     |                 | weak pullup  |     Disable     |            | mipi1_scl_o | mipi1_scl_oe |                  |       1        |  Disable  |             |
+|  mipi1_sda_io | mipi1_sda_i |                     |                 | weak pullup  |     Disable     |            | mipi1_sda_o | mipi1_sda_oe |                  |       1        |  Disable  |             |
++---------------+-------------+---------------------+-----------------+--------------+-----------------+------------+-------------+--------------+------------------+----------------+-----------+-------------+
+
+---------- GPIO Usage Summary (end) ----------
+
+---------- 8. PLL Usage Summary (begin) ----------
+
++---------------+----------+--------------+--------------+-----------------+---------------+----------------+---------------+---------------+---------------+
+| Instance Name | Resource | Clock Region | Clock Source | Reference Clock | Feedback Mode | Feedback Clock |    Clkout0    |    Clkout1    |    Clkout2    |
++---------------+----------+--------------+--------------+-----------------+---------------+----------------+---------------+---------------+---------------+
+|     AxiPLL    | PLL_TR0  |              |   external   |   AxiPllClkIn   |    internal   |                |    Axi0Clk    |   tx_slowclk  |   tx_fastclk  |
+|     DdrPLL    | PLL_BR0  |              |   external   |   DdrPllClkIn   |    internal   |                |    Axi0Clk    |               |    clk_cmos   |
+|    HdmiPLL    | PLL_BR1  |      B       |     core     |    tx_slowclk   |    internal   |                |  hdmi_clk1x_i |  hdmi_clk2x_i |  hdmi_clk5x_i |
+|    MipiPLL    | PLL_BL0  |      B       |     core     |    tx_slowclk   |    internal   |                | mipi_clkesc_i | mipi_clkcal_i | mipi_pixclk_i |
++---------------+----------+--------------+--------------+-----------------+---------------+----------------+---------------+---------------+---------------+
+
+***** PLL 0 *****
+
+Instance Name                 : AxiPLL
+Resource                      : PLL_TR0
+Locked Pin Name               : PllLocked[1]
+Clock Source                  : external
+Reference Clock Resource      : GPIOR_118
+Reference Clock               : AxiPllClkIn
+Feedback Mode                 : internal
+
+Reference Clock Frequency     : 12.0000 MHz
+Reference Clock Period        : 83.3333 ns
+Multiplier (M)                : 112
+Pre-Divider (N)               : 1
+VCO Frequency                 : 1344.0000 MHz
+Post-Divider (O)              : 2
+PLL Frequency                 : 672.0000 MHz
+
+Output Clock 0
+Clock Pin Name                : Axi0Clk
+Output Divider                : 7
+Output Phase Shift            : 0
+Output Frequency              : 96.0000 MHz
+Output Period                 : 10.417 ns
+
+Output Clock 1
+Clock Pin Name                : tx_slowclk
+Output Divider                : 14
+Output Phase Shift            : 0
+Output Frequency              : 48.0000 MHz
+Output Period                 : 20.833 ns
+
+Output Clock 2
+Clock Pin Name                : tx_fastclk
+Output Divider                : 4
+Output Phase Shift            : 90
+Output Frequency              : 168.0000 MHz
+Output Period                 : 5.952 ns
+
+Frequency calculations:
+	VCO = REFCLK * (M/N)
+	    = 12.0000 MHz * (112/1)
+	    = 1344.0000 MHz
+	PLL = VCO / O
+	    = 1344.0000 MHz / 2
+	    = 672.0000 MHz
+
+	CLKOUT0 = PLL / CLKOUT0_DIV
+	        = 672.0000 MHz / 7
+	        = 96.0000 MHz
+	CLKOUT1 = PLL / CLKOUT1_DIV
+	        = 672.0000 MHz / 14
+	        = 48.0000 MHz
+	CLKOUT2 = PLL / CLKOUT2_DIV
+	        = 672.0000 MHz / 4
+	        = 168.0000 MHz
+
+SDC Constraints:
+	create_clock -period 10.417 -name Axi0Clk [get_ports {Axi0Clk}]
+	create_clock -period 20.833 -name tx_slowclk [get_ports {tx_slowclk}]
+	create_clock -waveform {1.488 4.464} -period 5.952 -name tx_fastclk [get_ports {tx_fastclk}]
+
+***** PLL 1 *****
+
+Instance Name                 : DdrPLL
+Resource                      : PLL_BR0
+Locked Pin Name               : PllLocked[0]
+Clock Source                  : external
+Reference Clock Resource      : GPIOR_138
+Reference Clock               : DdrPllClkIn
+Feedback Mode                 : internal
+
+Reference Clock Frequency     : 24.0000 MHz
+Reference Clock Period        : 41.6667 ns
+Multiplier (M)                : 133
+Pre-Divider (N)               : 2
+VCO Frequency                 : 1596.0000 MHz
+Post-Divider (O)              : 4
+PLL Frequency                 : 399.0000 MHz
+
+Output Clock 0
+Clock Pin Name                : Axi0Clk
+Output Divider                : 1
+Output Phase Shift            : 0
+Output Frequency              : 399.0000 MHz
+Output Period                 : 2.506 ns
+
+Output Clock 2
+Clock Pin Name                : clk_cmos
+Output Divider                : 15
+Output Phase Shift            : 0
+Output Frequency              : 26.6000 MHz
+Output Period                 : 37.594 ns
+
+Frequency calculations:
+	VCO = REFCLK * (M/N)
+	    = 24.0000 MHz * (133/2)
+	    = 1596.0000 MHz
+	PLL = VCO / O
+	    = 1596.0000 MHz / 4
+	    = 399.0000 MHz
+
+	CLKOUT0 = PLL / CLKOUT0_DIV
+	        = 399.0000 MHz / 1
+	        = 399.0000 MHz
+	CLKOUT2 = PLL / CLKOUT2_DIV
+	        = 399.0000 MHz / 15
+	        = 26.6000 MHz
+
+SDC Constraints:
+	create_clock -period 2.506 -name Axi0Clk [get_ports {Axi0Clk}]
+	create_clock -period 37.594 -name clk_cmos [get_ports {clk_cmos}]
+
+***** PLL 2 *****
+
+Instance Name                 : HdmiPLL
+Resource                      : PLL_BR1
+Reset Pin Name                : hdmi_resetn_o
+Locked Pin Name               : hdmi_lock_i
+Clock Source                  : core
+Reference Clock               : tx_slowclk
+Feedback Mode                 : internal
+
+Reference Clock Frequency     : 48.0000 MHz
+Reference Clock Period        : 20.8333 ns
+Multiplier (M)                : 21
+Pre-Divider (N)               : 1
+VCO Frequency                 : 1008.0000 MHz
+Post-Divider (O)              : 4
+PLL Frequency                 : 252.0000 MHz
+
+Output Clock 0
+Clock Pin Name                : hdmi_clk1x_i
+Output Divider                : 10
+Output Phase Shift            : 0
+Output Frequency              : 25.2000 MHz
+Output Period                 : 39.683 ns
+
+Output Clock 1
+Clock Pin Name                : hdmi_clk2x_i
+Output Divider                : 5
+Output Phase Shift            : 0
+Output Frequency              : 50.4000 MHz
+Output Period                 : 19.841 ns
+
+Output Clock 2
+Clock Pin Name                : hdmi_clk5x_i
+Output Divider                : 2
+Output Phase Shift            : 90
+Output Frequency              : 126.0000 MHz
+Output Period                 : 7.937 ns
+
+Frequency calculations:
+	VCO = REFCLK * (M/N)
+	    = 48.0000 MHz * (21/1)
+	    = 1008.0000 MHz
+	PLL = VCO / O
+	    = 1008.0000 MHz / 4
+	    = 252.0000 MHz
+
+	CLKOUT0 = PLL / CLKOUT0_DIV
+	        = 252.0000 MHz / 10
+	        = 25.2000 MHz
+	CLKOUT1 = PLL / CLKOUT1_DIV
+	        = 252.0000 MHz / 5
+	        = 50.4000 MHz
+	CLKOUT2 = PLL / CLKOUT2_DIV
+	        = 252.0000 MHz / 2
+	        = 126.0000 MHz
+
+SDC Constraints:
+	create_clock -period 39.683 -name hdmi_clk1x_i [get_ports {hdmi_clk1x_i}]
+	create_clock -period 19.841 -name hdmi_clk2x_i [get_ports {hdmi_clk2x_i}]
+	create_clock -waveform {1.984 5.953} -period 7.937 -name hdmi_clk5x_i [get_ports {hdmi_clk5x_i}]
+
+***** PLL 3 *****
+
+Instance Name                 : MipiPLL
+Resource                      : PLL_BL0
+Reset Pin Name                : mipi_resetn_o
+Locked Pin Name               : mipi_lock_i
+Clock Source                  : core
+Reference Clock               : tx_slowclk
+Feedback Mode                 : internal
+
+Reference Clock Frequency     : 48.0000 MHz
+Reference Clock Period        : 20.8333 ns
+Multiplier (M)                : 100
+Pre-Divider (N)               : 3
+VCO Frequency                 : 1600.0000 MHz
+Post-Divider (O)              : 8
+PLL Frequency                 : 200.0000 MHz
+
+Output Clock 0
+Clock Pin Name                : mipi_clkesc_i
+Output Divider                : 10
+Output Phase Shift            : 0
+Output Frequency              : 20.0000 MHz
+Output Period                 : 50.000 ns
+
+Output Clock 1
+Clock Pin Name                : mipi_clkcal_i
+Output Divider                : 2
+Output Phase Shift            : 0
+Output Frequency              : 100.0000 MHz
+Output Period                 : 10.000 ns
+
+Output Clock 2
+Clock Pin Name                : mipi_pixclk_i
+Output Divider                : 2
+Output Phase Shift            : 0
+Output Frequency              : 100.0000 MHz
+Output Period                 : 10.000 ns
+
+Frequency calculations:
+	VCO = REFCLK * (M/N)
+	    = 48.0000 MHz * (100/3)
+	    = 1600.0000 MHz
+	PLL = VCO / O
+	    = 1600.0000 MHz / 8
+	    = 200.0000 MHz
+
+	CLKOUT0 = PLL / CLKOUT0_DIV
+	        = 200.0000 MHz / 10
+	        = 20.0000 MHz
+	CLKOUT1 = PLL / CLKOUT1_DIV
+	        = 200.0000 MHz / 2
+	        = 100.0000 MHz
+	CLKOUT2 = PLL / CLKOUT2_DIV
+	        = 200.0000 MHz / 2
+	        = 100.0000 MHz
+
+SDC Constraints:
+	create_clock -period 50.000 -name mipi_clkesc_i [get_ports {mipi_clkesc_i}]
+	create_clock -period 10.000 -name mipi_clkcal_i [get_ports {mipi_clkcal_i}]
+	create_clock -period 10.000 -name mipi_pixclk_i [get_ports {mipi_pixclk_i}]
+
+---------- PLL Usage Summary (end) ----------
+
+---------- 9. LVDS Rx Usage Summary (begin) ----------
+
+No LVDS Rx was configured
+
+---------- LVDS Rx Usage Summary (end) ----------
+
+---------- 10. LVDS Tx Usage Summary (begin) ----------
+
++---------------+------------+--------------------------------------------+--------------+--------------+------+---------------+------------+--------------+----------------+-------+-------------+---------------+
+| Instance Name |  Resource  |                 Pad Names                  | Package Pins | Clock Region | Mode | Serialization |   Output   | Serial Clock | Parallel Clock | Reset | Output Load | Reduced Swing |
++---------------+------------+--------------------------------------------+--------------+--------------+------+---------------+------------+--------------+----------------+-------+-------------+---------------+
+|    hdmi_tx0   | GPIOB_TX08 | GPIOB_TXN08_CDI20,GPIOB_TXP08_EXTFB0_CDI21 |   U13,V13    |      B       | out  |       5       | hdmi_tx0_o | hdmi_clk5x_i |  hdmi_clk2x_i  |       |      10     |    Disable    |
+|    hdmi_tx1   | GPIOB_TX07 |    GPIOB_TXN07_CDI22,GPIOB_TXP07_CDI23     |   R14,P14    |      B       | out  |       5       | hdmi_tx1_o | hdmi_clk5x_i |  hdmi_clk2x_i  |       |      10     |    Disable    |
+|    hdmi_tx2   | GPIOB_TX06 |    GPIOB_TXN06_CDI24,GPIOB_TXP06_CDI25     |   U14,V14    |      B       | out  |       5       | hdmi_tx2_o | hdmi_clk5x_i |  hdmi_clk2x_i  |       |      10     |    Disable    |
+|    hdmi_txc   | GPIOB_TX09 |        GPIOB_TXN09,GPIOB_TXP09_CLK0        |   R13,P13    |      B       | out  |       5       | hdmi_txc_o | hdmi_clk5x_i |  hdmi_clk2x_i  |       |      10     |    Disable    |
++---------------+------------+--------------------------------------------+--------------+--------------+------+---------------+------------+--------------+----------------+-------+-------------+---------------+
+
+---------- LVDS Tx Usage Summary (end) ----------
+
+---------- 11. MIPI Rx Usage Summary (begin) ----------
+
++---------------+----------+--------------+---------------+----------------------+
+| Instance Name | Resource | Clock Region |   Pixel Clk   | DPHY Calibration Clk |
++---------------+----------+--------------+---------------+----------------------+
+|   mipi_rx_0   | MIPI_RX0 |      R5      | mipi_pixclk_i |    mipi_clkcal_i     |
+|   mipi_rx_1   | MIPI_RX1 |      R4      | mipi_pixclk_i |    mipi_clkcal_i     |
++---------------+----------+--------------+---------------+----------------------+
+
+***** MIPI RX 0 *****
+
+Instance Name       : mipi_rx_0
+Resource            : MIPI_RX0
+
+Lane Mapping
+
+RXD0 - Lane         : data2
+RXD0 - P&N Pin Swap : true
+RXD1 - Lane         : data3
+RXD1 - P&N Pin Swap : true
+RXD2 - Lane         : data1
+RXD2 - P&N Pin Swap : true
+RXD3 - Lane         : clk
+RXD3 - P&N Pin Swap : true
+RXD4 - Lane         : data0
+RXD4 - P&N Pin Swap : true
+
+Timing
+
+DPHY Calibration Clock Frequency (MHz)  : 100.00
+
+Clock Timer
+T_clk_settle (ns)                       : 160
+
+Data Timer
+T_hs_settle (ns)                        : 150
+
+***** MIPI RX 1 *****
+
+Instance Name       : mipi_rx_1
+Resource            : MIPI_RX1
+
+Lane Mapping
+
+RXD0 - Lane         : data3
+RXD0 - P&N Pin Swap : true
+RXD1 - Lane         : clk
+RXD1 - P&N Pin Swap : true
+RXD2 - Lane         : data2
+RXD2 - P&N Pin Swap : true
+RXD3 - Lane         : data0
+RXD3 - P&N Pin Swap : true
+RXD4 - Lane         : data1
+RXD4 - P&N Pin Swap : true
+
+Timing
+
+DPHY Calibration Clock Frequency (MHz)  : 100.00
+
+Clock Timer
+T_clk_settle (ns)                       : 160
+
+Data Timer
+T_hs_settle (ns)                        : 150
+
+---------- MIPI Rx Usage Summary (end) ----------
+
+---------- 12. MIPI Tx Usage Summary (begin) ----------
+
+No MIPI Tx was configured
+
+---------- MIPI Tx Usage Summary (end) ----------
+
+---------- 13. Clock Mux Usage Summary (begin) ----------
+
++----------+-----------------+
+| Resource | Output Assigned |
++----------+-----------------+
+| CLKMUX_L |        3        |
+| CLKMUX_R |        7        |
++----------+-----------------+
+
+***** CLOCKMUX 0 *****
+
+Resource: CLKMUX_L
+
+Clock mux assignment:
+
++-----------------+---------------+----------+---------------+---------------+---------------+---------+---------+---------+---------+---------+
+|  Input Resource |   Clock Pin   |  Status  |    LCLK[0]    |    LCLK[1]    |    LCLK[2]    | LCLK[3] | LCLK[4] | LCLK[5] | LCLK[6] | LCLK[7] |
++-----------------+---------------+----------+---------------+---------------+---------------+---------+---------+---------+---------+---------+
+|                 |               | Selected | mipi_clkesc_i | mipi_clkcal_i | mipi_pixclk_i |         |         |         |         |         |
+|   GPIOL_66.IN   |               |          |       -       |               |               |         |    O    |         |         |         |
+|   GPIOL_67.IN   |               |          |               |       -       |               |         |         |    O    |         |         |
+|   GPIOL_68.IN   |               |          |               |               |       -       |         |         |         |    O    |         |
+|   GPIOL_69.IN   |               |          |               |               |               |    O    |         |         |         |    O    |
+|   GPIOL_70.IN   |               |          |       -       |               |               |         |    O    |         |         |         |
+|   GPIOL_71.IN   |               |          |               |       -       |               |         |         |    O    |         |         |
+|   GPIOL_72.IN   |               |          |               |               |       -       |         |         |         |    O    |         |
+|   GPIOL_73.IN   |               |          |               |               |               |    O    |         |         |         |    O    |
+| PLL_BL0.CLKOUT0 | mipi_clkesc_i |  Routed  |       ^       |               |               |    O    |         |         |         |    O    |
+| PLL_BL0.CLKOUT1 | mipi_clkcal_i |  Routed  |               |       ^       |               |         |    O    |         |    O    |         |
+| PLL_BL0.CLKOUT2 | mipi_pixclk_i |  Routed  |               |               |       ^       |         |         |    O    |         |         |
++-----------------+---------------+----------+---------------+---------------+---------------+---------+---------+---------+---------+---------+
+
+*NOTE
+ : No connection from input to mux output
+O: Available input to mux output connection
+^: Input assigned to mux output
+-: Unavailable (used) input to mux output connection
+
+***** CLOCKMUX 1 *****
+
+Resource: CLKMUX_R
+
+Clock mux assignment:
+
++-----------------+--------------+----------+---------+------------+------------+--------------+--------------+----------+--------------+---------+
+|  Input Resource |  Clock Pin   |  Status  | RCLK[0] |  RCLK[1]   |  RCLK[2]   |   RCLK[3]    |   RCLK[4]    | RCLK[5]  |   RCLK[6]    | RCLK[7] |
++-----------------+--------------+----------+---------+------------+------------+--------------+--------------+----------+--------------+---------+
+|                 |              | Selected | Axi0Clk | tx_slowclk | tx_fastclk | hdmi_clk2x_i | hdmi_clk5x_i | clk_cmos | hdmi_clk1x_i |         |
+|   GPIOR_133.IN  |              |          |    -    |            |            |              |              |          |              |         |
+|   GPIOR_132.IN  |              |          |         |     -      |            |              |              |          |              |         |
+|   GPIOR_131.IN  |              |          |         |            |     -      |              |              |          |              |         |
+|   GPIOR_130.IN  |              |          |         |            |            |      -       |              |          |              |         |
+|   GPIOR_129.IN  |              |          |         |            |            |              |      -       |          |              |         |
+|   GPIOR_128.IN  |              |          |         |            |            |              |              |    -     |              |         |
+|   GPIOR_127.IN  |              |          |         |            |            |              |              |          |      -       |         |
+|   GPIOR_126.IN  |              |          |         |            |            |              |              |          |              |    O    |
+| PLL_TR0.CLKOUT0 |   Axi0Clk    |  Routed  |    ^    |            |            |              |              |          |      -       |         |
+| PLL_TR0.CLKOUT1 |  tx_slowclk  |  Routed  |         |     ^      |     -      |              |              |          |              |         |
+| PLL_TR0.CLKOUT2 |  tx_fastclk  |  Routed  |         |     -      |     ^      |              |              |          |              |         |
+| PLL_TR1.CLKOUT0 |              |          |    -    |            |            |      -       |              |          |              |         |
+| PLL_TR1.CLKOUT1 |              |          |         |            |            |              |      -       |    -     |              |         |
+| PLL_TR1.CLKOUT2 |              |          |         |            |            |              |      -       |    -     |              |         |
+| PLL_TR2.CLKOUT0 |              |          |    -    |            |            |              |              |          |              |    O    |
+| PLL_TR2.CLKOUT1 |              |          |         |     -      |     -      |              |              |          |              |         |
+| PLL_TR2.CLKOUT2 |              |          |         |     -      |     -      |              |              |          |              |         |
+| PLL_BR0.CLKOUT0 |   Axi0Clk    | Internal |         |            |            |      -       |              |          |              |    O    |
+| PLL_BR0.CLKOUT1 |              |          |         |            |            |              |      -       |    -     |              |         |
+| PLL_BR0.CLKOUT2 |   clk_cmos   |  Routed  |         |            |            |              |      -       |    ^     |              |         |
+| PLL_BR1.CLKOUT0 | hdmi_clk1x_i |  Routed  |         |            |     -      |              |              |          |      ^       |         |
+| PLL_BR1.CLKOUT1 | hdmi_clk2x_i |  Routed  |         |            |            |      ^       |      -       |          |              |         |
+| PLL_BR1.CLKOUT2 | hdmi_clk5x_i |  Routed  |         |            |            |      -       |      ^       |          |              |         |
+| PLL_BR2.CLKOUT0 |              |          |         |            |            |              |              |    -     |              |         |
+| PLL_BR2.CLKOUT1 |              |          |         |     -      |            |              |              |          |      -       |         |
+| PLL_BR2.CLKOUT2 |              |          |         |            |            |              |              |          |              |    O    |
++-----------------+--------------+----------+---------+------------+------------+--------------+--------------+----------+--------------+---------+
+
+*NOTE
+ : No connection from input to mux output
+O: Available input to mux output connection
+^: Input assigned to mux output
+-: Unavailable (used) input to mux output connection
+
+---------- Clock Mux Usage Summary (end) ----------
+
+---------- 14. Configuration Control Usage Summary (begin) ----------
+
+No Configuration Control was configured
+
+---------- Configuration Control Usage Summary (end) ----------
+
+---------- 15. JTAG Usage Summary (begin) ----------
+
+No JTAG was configured
+
+---------- JTAG Usage Summary (end) ----------
+
+---------- 16. DDR Usage Summary (begin) ----------
+
+Instance Name                                             : DdrCtrl
+Resource                                                  : DDR_0
+Clock Region                                              : R0,R1
+Calibration Enabled                                       : true
+AXI Interface Target 0 Enabled                            : true
+AXI Interface Target 1 Enabled                            : false
+
+Configuration Settings                                    
+Controller DQ Width                                       : x16
+Memory Type                                               : DDR3
+Memory Speed Grade                                        : 800D
+Memory Width                                              : x16
+Memory Density                                            : 4G
+Enable Advanced Density Setting                           : false
+
+FPGA Settings                                             
+FPGA Input Termination (Ohm)                              : 60
+FPGA Output Termination (Ohm)                             : 34
+
+Memory Mode Register Settings                             
+Burst Length                                              : 8
+DLL Precharge Power Down                                  : On
+Memory Auto Self-Refresh                                  : Manual
+Memory CAS Latency (CL)                                   : 6
+Memory CAS Write Latency (CWL)                            : 5
+Memory Dynamic ODT (Rtt_WR)                               : RZQ/4
+Memory Input Termination (Rtt_nom)                        : RZQ/6
+Memory Output Termination                                 : RZQ/7
+Read Burst Type                                           : Sequential
+Self-Refresh Temperature                                  : Normal
+
+Memory Timing Settings                                    
+tFAW, Four Bank Active Window (ns)                        : 35.000
+tRAS, Active To Precharge Command Period (ns)             : 34.000
+tRC, Active To Active Or REF Command Period (ns)          : 47.910
+tRCD, Active To Read Or Write Delay (ns)                  : 13.910
+tREFI, Average Periodic Refresh Interval (us)             : 7.800
+tRFC, Refresh To Active Or Refresh To Refresh Delay (ns)  : 350.000
+tRP, Precharge Command Period (ns)                        : 13.910
+tRRD, Active to Active Command Period (ns)                : 10.000
+tRTP, Internal Read To Precharge Delay (ns)               : 10.000
+tWTR, Internal Write To Read Command Delay (ns)           : 10.000
+
+Controller Settings                                       
+Controller To Memory Address Mapping                      : ROW-COL_HIGH-BANK-COL_LOW
+Enable Auto Power Down                                    : Off
+Enable Self-Refresh Controls                              : No
+
+Gate Delay Tuning Settings                                
+Enable Gate Delay Override                                : No
+Gate Coarse Delay Tuning                                  : 0
+Gate Fine Delay Tuning                                    : 0
+
+Control Status                                            : Enable User Reset
+Master Reset Pin Name                                     : DdrCtrl_RSTN
+AXI Interface Target 0 Clock Pin Name                     : Axi0Clk
+
+---------- DDR Usage Summary (end) ----------
+
+---------- 17. Design Issues (begin) ----------
+
++---------------+---------------+----------+--------------------------+-------------------------------------------------------------------------------------------------------+
+| Instance Name | Instance Type | Severity |           Rule           |                                              Description                                              |
++---------------+---------------+----------+--------------------------+-------------------------------------------------------------------------------------------------------+
+|    DdrCtrl    |      ddr      | warning  | ddr_rule_memory_settings | For the 800D speed grade, CL/CWL values are below the minimum. (Suggested minimum value: CL=6, CWL=7) |
++---------------+---------------+----------+--------------------------+-------------------------------------------------------------------------------------------------------+
+
+---------- Design Issues (end) ----------

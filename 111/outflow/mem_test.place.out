@@ -1,0 +1,1266 @@
+           
+           Efinix FPGA Placement and Routing.
+           Version: 2025.2.288 
+           Compiled: Nov 13 2025.
+           
+           Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+
+           
+           The Tool Is Based on VPR of University of Toronto,
+           a free open source code under MIT license.
+           
+           
+INFO     : Running Placement and Routing for Family "Trion", Device "T35F324" ...
+           
+           ***** Beginning stage netlist pre-processing ... *****
+INFO     : Successfully read in VDB netlist file F:/FPGA_NEW/111/outflow/mem_test.vdb [DBMsg::VdbFileRead]
+INFO     : ***** Beginning VDB Netlist Checker ... *****
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(4): Input/inout port AxiPllClkIn is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(5): Input/inout port DdrPllClkIn is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(11): Input/inout port mipi_clkcal_i is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(12): Input/inout port mipi_clkesc_i is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(16): Input/inout port hdmi_clk5x_i is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(18): Input/inout port tx_slowclk is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(19): Input/inout port tx_fastclk is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(20): Input/inout port PllLocked[0] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(35): Input/inout port DdrCtrl_AREADY_0 is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(43): Input/inout port DdrCtrl_WREADY_0 is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(45): Input/inout port DdrCtrl_RID_0[7] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(46): Input/inout port DdrCtrl_RDATA_0[127] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(47): Input/inout port DdrCtrl_RLAST_0 is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(48): Input/inout port DdrCtrl_RVALID_0 is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(50): Input/inout port DdrCtrl_RRESP_0[1] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(52): Input/inout port DdrCtrl_BID_0[7] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(53): Input/inout port DdrCtrl_BVALID_0 is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(69): Input/inout port uart_rxd is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(71): Input/inout port mipi0_scl_i is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(75): Input/inout port mipi0_sda_i is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(79): Input/inout port mipi1_scl_i is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(83): Input/inout port mipi1_sda_i is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(99): Input/inout port mipi_rx_0_VC_i[1] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(100): Input/inout port mipi_rx_0_VSYNC_i[3] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(101): Input/inout port mipi_rx_0_HSYNC_i[3] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(103): Input/inout port mipi_rx_0_CNT_i[3] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(104): Input/inout port mipi_rx_0_TYPE_i[5] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(107): Input/inout port mipi_rx_1_VC_i[1] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(108): Input/inout port mipi_rx_1_VSYNC_i[3] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(109): Input/inout port mipi_rx_1_HSYNC_i[3] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(110): Input/inout port mipi_rx_1_DATA_i[63] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(111): Input/inout port mipi_rx_1_CNT_i[3] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(112): Input/inout port mipi_rx_1_TYPE_i[5] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(113): Input/inout port mipi_rx_1_VALID_i is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(115): Input/inout port mipi_rx_0_ULPS[3] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(116): Input/inout port mipi_rx_0_ULPS_CLK is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(118): Input/inout port mipi_rx_0_ERROR[17] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(120): Input/inout port mipi_rx_1_ULPS[3] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(121): Input/inout port mipi_rx_1_ULPS_CLK is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(123): Input/inout port mipi_rx_1_ERROR[17] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : Found 314 warnings in the post-synthesis netlist.
+INFO     : VDB Netlist Checker took 0.0139273 seconds [FlowMsg::StageDuration]
+INFO     :     VDB Netlist Checker took 0.03125 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : VDB Netlist Checker virtual memory usage: begin = 93.58 MB, end = 94.408 MB, delta = 0.828 MB [FlowMsg::VMUsage]
+INFO     :     VDB Netlist Checker peak virtual memory usage = 94.416 MB [FlowMsg::VMUsage::Peak]
+INFO     : VDB Netlist Checker resident set memory usage: begin = 103.888 MB, end = 105.084 MB, delta = 1.196 MB [FlowMsg::RSSUsage]
+INFO     :     VDB Netlist Checker peak resident set memory usage = 105.084 MB [FlowMsg::RSSUsage::Peak]
+INFO     : ***** Ending VDB Netlist Checker ... *****
+INFO     : Reading core interface constraints file "F:/FPGA_NEW/111/outflow/mem_test.interface.csv" [DBMsg::CoreInterfaceConstraintsFileReading]
+INFO     : Successfully read core interface constraints file "F:/FPGA_NEW/111/outflow/mem_test.interface.csv" [DBMsg::CoreInterfaceConstraintsFileLoadSuccess]
+INFO     : Net tx_slowclk promoted to global due to interface constraints [DBMsg::NetlistGlobalPromotion]
+INFO     : Creating interface clock buffer tx_slowclk~CLKBUF [DBMsg::NetlistInterfaceClockBufferCreated]
+INFO     : Net hdmi_clk5x_i promoted to global due to interface constraints [DBMsg::NetlistGlobalPromotion]
+INFO     : Creating interface clock buffer hdmi_clk5x_i~CLKBUF [DBMsg::NetlistInterfaceClockBufferCreated]
+INFO     : Net mipi_clkcal_i promoted to global due to interface constraints [DBMsg::NetlistGlobalPromotion]
+INFO     : Creating interface clock buffer mipi_clkcal_i~CLKBUF [DBMsg::NetlistInterfaceClockBufferCreated]
+INFO     : Found 0 constant generator nets [DBMsg::NetlistConstGeneratorCount]
+INFO     : Pass 0: Swept away 0 nets with no fanout [DBMsg::NetlistNetsSweptThisPass]
+WARNING  : logical_block 0 #AxiPllClkIn has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 1 #DdrPllClkIn has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 6 #mipi_clkesc_i has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 12 #tx_fastclk has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 14 #PllLocked[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 76 #DdrCtrl_AREADY_0 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 232 #DdrCtrl_WREADY_0 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 233 #DdrCtrl_RID_0[7] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 234 #DdrCtrl_RID_0[6] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 235 #DdrCtrl_RID_0[5] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 236 #DdrCtrl_RID_0[4] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 237 #DdrCtrl_RID_0[3] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 238 #DdrCtrl_RID_0[2] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 239 #DdrCtrl_RID_0[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 240 #DdrCtrl_RID_0[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 241 #DdrCtrl_RDATA_0[127] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 242 #DdrCtrl_RDATA_0[126] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 243 #DdrCtrl_RDATA_0[125] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 244 #DdrCtrl_RDATA_0[124] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 245 #DdrCtrl_RDATA_0[123] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 246 #DdrCtrl_RDATA_0[122] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 247 #DdrCtrl_RDATA_0[121] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 248 #DdrCtrl_RDATA_0[120] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 249 #DdrCtrl_RDATA_0[119] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 250 #DdrCtrl_RDATA_0[118] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 251 #DdrCtrl_RDATA_0[117] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 252 #DdrCtrl_RDATA_0[116] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 253 #DdrCtrl_RDATA_0[115] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 254 #DdrCtrl_RDATA_0[114] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 255 #DdrCtrl_RDATA_0[113] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 256 #DdrCtrl_RDATA_0[112] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 257 #DdrCtrl_RDATA_0[111] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 258 #DdrCtrl_RDATA_0[110] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 259 #DdrCtrl_RDATA_0[109] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 260 #DdrCtrl_RDATA_0[108] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 261 #DdrCtrl_RDATA_0[107] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 262 #DdrCtrl_RDATA_0[106] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 263 #DdrCtrl_RDATA_0[105] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 264 #DdrCtrl_RDATA_0[104] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 265 #DdrCtrl_RDATA_0[103] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 266 #DdrCtrl_RDATA_0[102] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 267 #DdrCtrl_RDATA_0[101] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 268 #DdrCtrl_RDATA_0[100] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 269 #DdrCtrl_RDATA_0[99] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 270 #DdrCtrl_RDATA_0[98] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 271 #DdrCtrl_RDATA_0[97] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 272 #DdrCtrl_RDATA_0[96] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 273 #DdrCtrl_RDATA_0[95] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 274 #DdrCtrl_RDATA_0[94] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 275 #DdrCtrl_RDATA_0[93] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 276 #DdrCtrl_RDATA_0[92] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 277 #DdrCtrl_RDATA_0[91] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 278 #DdrCtrl_RDATA_0[90] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 279 #DdrCtrl_RDATA_0[89] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 280 #DdrCtrl_RDATA_0[88] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 281 #DdrCtrl_RDATA_0[87] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 282 #DdrCtrl_RDATA_0[86] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 283 #DdrCtrl_RDATA_0[85] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 284 #DdrCtrl_RDATA_0[84] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 285 #DdrCtrl_RDATA_0[83] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 286 #DdrCtrl_RDATA_0[82] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 287 #DdrCtrl_RDATA_0[81] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 288 #DdrCtrl_RDATA_0[80] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 289 #DdrCtrl_RDATA_0[79] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 290 #DdrCtrl_RDATA_0[78] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 291 #DdrCtrl_RDATA_0[77] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 292 #DdrCtrl_RDATA_0[76] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 293 #DdrCtrl_RDATA_0[75] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 294 #DdrCtrl_RDATA_0[74] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 295 #DdrCtrl_RDATA_0[73] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 296 #DdrCtrl_RDATA_0[72] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 297 #DdrCtrl_RDATA_0[71] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 298 #DdrCtrl_RDATA_0[70] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 299 #DdrCtrl_RDATA_0[69] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 300 #DdrCtrl_RDATA_0[68] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 301 #DdrCtrl_RDATA_0[67] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 302 #DdrCtrl_RDATA_0[66] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 303 #DdrCtrl_RDATA_0[65] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 304 #DdrCtrl_RDATA_0[64] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 305 #DdrCtrl_RDATA_0[63] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 306 #DdrCtrl_RDATA_0[62] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 307 #DdrCtrl_RDATA_0[61] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 308 #DdrCtrl_RDATA_0[60] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 309 #DdrCtrl_RDATA_0[59] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 310 #DdrCtrl_RDATA_0[58] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 311 #DdrCtrl_RDATA_0[57] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 312 #DdrCtrl_RDATA_0[56] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 313 #DdrCtrl_RDATA_0[55] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 314 #DdrCtrl_RDATA_0[54] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 315 #DdrCtrl_RDATA_0[53] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 316 #DdrCtrl_RDATA_0[52] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 317 #DdrCtrl_RDATA_0[51] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 318 #DdrCtrl_RDATA_0[50] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 319 #DdrCtrl_RDATA_0[49] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 320 #DdrCtrl_RDATA_0[48] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 321 #DdrCtrl_RDATA_0[47] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 322 #DdrCtrl_RDATA_0[46] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 323 #DdrCtrl_RDATA_0[45] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 324 #DdrCtrl_RDATA_0[44] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 325 #DdrCtrl_RDATA_0[43] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 326 #DdrCtrl_RDATA_0[42] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 327 #DdrCtrl_RDATA_0[41] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 328 #DdrCtrl_RDATA_0[40] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 329 #DdrCtrl_RDATA_0[39] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 330 #DdrCtrl_RDATA_0[38] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 331 #DdrCtrl_RDATA_0[37] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 332 #DdrCtrl_RDATA_0[36] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 333 #DdrCtrl_RDATA_0[35] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 334 #DdrCtrl_RDATA_0[34] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 335 #DdrCtrl_RDATA_0[33] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 336 #DdrCtrl_RDATA_0[32] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 337 #DdrCtrl_RDATA_0[31] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 338 #DdrCtrl_RDATA_0[30] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 339 #DdrCtrl_RDATA_0[29] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 340 #DdrCtrl_RDATA_0[28] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 341 #DdrCtrl_RDATA_0[27] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 342 #DdrCtrl_RDATA_0[26] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 343 #DdrCtrl_RDATA_0[25] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 344 #DdrCtrl_RDATA_0[24] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 345 #DdrCtrl_RDATA_0[23] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 346 #DdrCtrl_RDATA_0[22] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 347 #DdrCtrl_RDATA_0[21] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 348 #DdrCtrl_RDATA_0[20] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 349 #DdrCtrl_RDATA_0[19] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 350 #DdrCtrl_RDATA_0[18] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 351 #DdrCtrl_RDATA_0[17] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 352 #DdrCtrl_RDATA_0[16] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 353 #DdrCtrl_RDATA_0[15] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 354 #DdrCtrl_RDATA_0[14] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 355 #DdrCtrl_RDATA_0[13] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 356 #DdrCtrl_RDATA_0[12] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 357 #DdrCtrl_RDATA_0[11] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 358 #DdrCtrl_RDATA_0[10] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 359 #DdrCtrl_RDATA_0[9] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 360 #DdrCtrl_RDATA_0[8] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 361 #DdrCtrl_RDATA_0[7] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 362 #DdrCtrl_RDATA_0[6] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 363 #DdrCtrl_RDATA_0[5] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 364 #DdrCtrl_RDATA_0[4] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 365 #DdrCtrl_RDATA_0[3] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 366 #DdrCtrl_RDATA_0[2] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 367 #DdrCtrl_RDATA_0[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 368 #DdrCtrl_RDATA_0[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 369 #DdrCtrl_RLAST_0 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 370 #DdrCtrl_RVALID_0 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 372 #DdrCtrl_RRESP_0[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 373 #DdrCtrl_RRESP_0[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 374 #DdrCtrl_BID_0[7] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 375 #DdrCtrl_BID_0[6] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 376 #DdrCtrl_BID_0[5] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 377 #DdrCtrl_BID_0[4] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 378 #DdrCtrl_BID_0[3] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 379 #DdrCtrl_BID_0[2] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 380 #DdrCtrl_BID_0[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 381 #DdrCtrl_BID_0[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 382 #DdrCtrl_BVALID_0 has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 413 #uart_rxd has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 414 #mipi0_scl_i has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 417 #mipi0_sda_i has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 420 #mipi1_scl_i has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 423 #mipi1_sda_i has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 444 #mipi_rx_0_VC_i[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 445 #mipi_rx_0_VC_i[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 446 #mipi_rx_0_VSYNC_i[3] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 447 #mipi_rx_0_VSYNC_i[2] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 448 #mipi_rx_0_VSYNC_i[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 449 #mipi_rx_0_VSYNC_i[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 450 #mipi_rx_0_HSYNC_i[3] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 451 #mipi_rx_0_HSYNC_i[2] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 452 #mipi_rx_0_HSYNC_i[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 518 #mipi_rx_0_CNT_i[3] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 519 #mipi_rx_0_CNT_i[2] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 520 #mipi_rx_0_CNT_i[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 521 #mipi_rx_0_CNT_i[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 522 #mipi_rx_0_TYPE_i[5] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 523 #mipi_rx_0_TYPE_i[4] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 524 #mipi_rx_0_TYPE_i[3] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 525 #mipi_rx_0_TYPE_i[2] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 526 #mipi_rx_0_TYPE_i[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 527 #mipi_rx_0_TYPE_i[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 529 #mipi_rx_1_VC_i[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 530 #mipi_rx_1_VC_i[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 531 #mipi_rx_1_VSYNC_i[3] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 532 #mipi_rx_1_VSYNC_i[2] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 533 #mipi_rx_1_VSYNC_i[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 534 #mipi_rx_1_VSYNC_i[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 535 #mipi_rx_1_HSYNC_i[3] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 536 #mipi_rx_1_HSYNC_i[2] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 537 #mipi_rx_1_HSYNC_i[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 538 #mipi_rx_1_HSYNC_i[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 539 #mipi_rx_1_DATA_i[63] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 540 #mipi_rx_1_DATA_i[62] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 541 #mipi_rx_1_DATA_i[61] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 542 #mipi_rx_1_DATA_i[60] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 543 #mipi_rx_1_DATA_i[59] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 544 #mipi_rx_1_DATA_i[58] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 545 #mipi_rx_1_DATA_i[57] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 546 #mipi_rx_1_DATA_i[56] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 547 #mipi_rx_1_DATA_i[55] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 548 #mipi_rx_1_DATA_i[54] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 549 #mipi_rx_1_DATA_i[53] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 550 #mipi_rx_1_DATA_i[52] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 551 #mipi_rx_1_DATA_i[51] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 552 #mipi_rx_1_DATA_i[50] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 553 #mipi_rx_1_DATA_i[49] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 554 #mipi_rx_1_DATA_i[48] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 555 #mipi_rx_1_DATA_i[47] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 556 #mipi_rx_1_DATA_i[46] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 557 #mipi_rx_1_DATA_i[45] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 558 #mipi_rx_1_DATA_i[44] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 559 #mipi_rx_1_DATA_i[43] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 560 #mipi_rx_1_DATA_i[42] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 561 #mipi_rx_1_DATA_i[41] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 562 #mipi_rx_1_DATA_i[40] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 563 #mipi_rx_1_DATA_i[39] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 564 #mipi_rx_1_DATA_i[38] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 565 #mipi_rx_1_DATA_i[37] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 566 #mipi_rx_1_DATA_i[36] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 567 #mipi_rx_1_DATA_i[35] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 568 #mipi_rx_1_DATA_i[34] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 569 #mipi_rx_1_DATA_i[33] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 570 #mipi_rx_1_DATA_i[32] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 571 #mipi_rx_1_DATA_i[31] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 572 #mipi_rx_1_DATA_i[30] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 573 #mipi_rx_1_DATA_i[29] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 574 #mipi_rx_1_DATA_i[28] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 575 #mipi_rx_1_DATA_i[27] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 576 #mipi_rx_1_DATA_i[26] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 577 #mipi_rx_1_DATA_i[25] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 578 #mipi_rx_1_DATA_i[24] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 579 #mipi_rx_1_DATA_i[23] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 580 #mipi_rx_1_DATA_i[22] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 581 #mipi_rx_1_DATA_i[21] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 582 #mipi_rx_1_DATA_i[20] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 583 #mipi_rx_1_DATA_i[19] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 584 #mipi_rx_1_DATA_i[18] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 585 #mipi_rx_1_DATA_i[17] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 586 #mipi_rx_1_DATA_i[16] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 587 #mipi_rx_1_DATA_i[15] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 588 #mipi_rx_1_DATA_i[14] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 589 #mipi_rx_1_DATA_i[13] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 590 #mipi_rx_1_DATA_i[12] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 591 #mipi_rx_1_DATA_i[11] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 592 #mipi_rx_1_DATA_i[10] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 593 #mipi_rx_1_DATA_i[9] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 594 #mipi_rx_1_DATA_i[8] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 595 #mipi_rx_1_DATA_i[7] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 596 #mipi_rx_1_DATA_i[6] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 597 #mipi_rx_1_DATA_i[5] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 598 #mipi_rx_1_DATA_i[4] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 599 #mipi_rx_1_DATA_i[3] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 600 #mipi_rx_1_DATA_i[2] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 601 #mipi_rx_1_DATA_i[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 602 #mipi_rx_1_DATA_i[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 603 #mipi_rx_1_CNT_i[3] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 604 #mipi_rx_1_CNT_i[2] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 605 #mipi_rx_1_CNT_i[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 606 #mipi_rx_1_CNT_i[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 607 #mipi_rx_1_TYPE_i[5] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 608 #mipi_rx_1_TYPE_i[4] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 609 #mipi_rx_1_TYPE_i[3] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 610 #mipi_rx_1_TYPE_i[2] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 611 #mipi_rx_1_TYPE_i[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 612 #mipi_rx_1_TYPE_i[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 613 #mipi_rx_1_VALID_i has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 614 #mipi_rx_0_ULPS[3] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 615 #mipi_rx_0_ULPS[2] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 616 #mipi_rx_0_ULPS[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 617 #mipi_rx_0_ULPS[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 618 #mipi_rx_0_ULPS_CLK has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 620 #mipi_rx_0_ERROR[17] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 621 #mipi_rx_0_ERROR[16] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 622 #mipi_rx_0_ERROR[15] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 623 #mipi_rx_0_ERROR[14] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 624 #mipi_rx_0_ERROR[13] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 625 #mipi_rx_0_ERROR[12] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 626 #mipi_rx_0_ERROR[11] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 627 #mipi_rx_0_ERROR[10] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 628 #mipi_rx_0_ERROR[9] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 629 #mipi_rx_0_ERROR[8] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 630 #mipi_rx_0_ERROR[7] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 631 #mipi_rx_0_ERROR[6] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 632 #mipi_rx_0_ERROR[5] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 633 #mipi_rx_0_ERROR[4] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 634 #mipi_rx_0_ERROR[3] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 635 #mipi_rx_0_ERROR[2] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 636 #mipi_rx_0_ERROR[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 637 #mipi_rx_0_ERROR[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 638 #mipi_rx_1_ULPS[3] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 639 #mipi_rx_1_ULPS[2] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 640 #mipi_rx_1_ULPS[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 641 #mipi_rx_1_ULPS[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 642 #mipi_rx_1_ULPS_CLK has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 644 #mipi_rx_1_ERROR[17] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 645 #mipi_rx_1_ERROR[16] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 646 #mipi_rx_1_ERROR[15] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 647 #mipi_rx_1_ERROR[14] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 648 #mipi_rx_1_ERROR[13] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 649 #mipi_rx_1_ERROR[12] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 650 #mipi_rx_1_ERROR[11] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 651 #mipi_rx_1_ERROR[10] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 652 #mipi_rx_1_ERROR[9] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 653 #mipi_rx_1_ERROR[8] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 654 #mipi_rx_1_ERROR[7] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 655 #mipi_rx_1_ERROR[6] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 656 #mipi_rx_1_ERROR[5] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 657 #mipi_rx_1_ERROR[4] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 658 #mipi_rx_1_ERROR[3] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 659 #mipi_rx_1_ERROR[2] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 660 #mipi_rx_1_ERROR[1] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+WARNING  : logical_block 661 #mipi_rx_1_ERROR[0] has no fanout [DBMsg::NetlistLogicalBlockNoFanout]
+INFO     : Removing input [DBMsg::NetlistRemovingInput]
+INFO     : Pass 0: Swept away 311 blocks with no fanout [DBMsg::NetlistBlocksSweptThisPass]
+INFO     : Pass 1: Swept away 0 nets with no fanout [DBMsg::NetlistNetsSweptThisPass]
+INFO     : Pass 1: Swept away 0 blocks with no fanout [DBMsg::NetlistBlocksSweptThisPass]
+INFO     : Swept away 0 nets and 311 blocks in total [DBMsg::NetlistTotalSwept]
+INFO     : Removed 0 LUT buffers [DBMsg::NetlistRemovedLUTBuffers]
+INFO     : Sweept away 311 nodes [DBMsg::NetlistSweptNodes]
+INFO     : Successfully read in VDB netlist file F:/FPGA_NEW/111/outflow/mem_test.vdb [DBMsg::VdbFileRead]
+INFO     : Netlist pre-processing took 0.1607002 seconds [FlowMsg::StageDuration]
+INFO     :     Netlist pre-processing took 0.109375 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Netlist pre-processing virtual memory usage: begin = 93.58 MB, end = 94.408 MB, delta = 0.828 MB [FlowMsg::VMUsage]
+INFO     :     Netlist pre-processing peak virtual memory usage = 94.416 MB [FlowMsg::VMUsage::Peak]
+INFO     : Netlist pre-processing resident set memory usage: begin = 103.188 MB, end = 105.632 MB, delta = 2.444 MB [FlowMsg::RSSUsage]
+INFO     :     Netlist pre-processing peak resident set memory usage = 105.632 MB [FlowMsg::RSSUsage::Peak]
+           ***** Ending stage netlist pre-processing *****
+           
+           ***** Beginning stage pre-packing ... *****
+           ***** Ending stage pre-packing *****
+           
+           ***** Beginning stage packing ... *****
+INFO     : Generate proto netlist for file "F:/FPGA_NEW/111/work_pnr\mem_test.net_proto" took 0.016 seconds
+INFO     : Creating IO constraints file 'F:/FPGA_NEW/111/work_pnr\mem_test.io_place'
+INFO     : Packing took 0.0466789 seconds [FlowMsg::StageDuration]
+INFO     :     Packing took 0.046875 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Packing virtual memory usage: begin = 94.408 MB, end = 94.408 MB, delta = 0 MB [FlowMsg::VMUsage]
+INFO     :     Packing peak virtual memory usage = 94.416 MB [FlowMsg::VMUsage::Peak]
+INFO     : Packing resident set memory usage: begin = 106.088 MB, end = 106.564 MB, delta = 0.476 MB [FlowMsg::RSSUsage]
+INFO     :     Packing peak resident set memory usage = 106.564 MB [FlowMsg::RSSUsage::Peak]
+           ***** Ending stage packing *****
+           
+INFO     : Read proto netlist file F:/FPGA_NEW/111/work_pnr\mem_test.net_proto
+INFO     : Read proto netlist for file "F:/FPGA_NEW/111/work_pnr\mem_test.net_proto" took 0.01 seconds
+INFO     : Setup net and block data structure took 0.294 seconds
+WARNING  : Found 314 warnings in the post-synthesis netlist.
+INFO     : Reading core interface constraints file "F:/FPGA_NEW/111/outflow/mem_test.interface.csv" [DBMsg::CoreInterfaceConstraintsFileReading]
+INFO     : Successfully read core interface constraints file "F:/FPGA_NEW/111/outflow/mem_test.interface.csv" [DBMsg::CoreInterfaceConstraintsFileLoadSuccess]
+INFO     : Net tx_slowclk promoted to global due to interface constraints [DBMsg::NetlistGlobalPromotion]
+INFO     : Creating interface clock buffer tx_slowclk~CLKBUF [DBMsg::NetlistInterfaceClockBufferCreated]
+INFO     : Net hdmi_clk5x_i promoted to global due to interface constraints [DBMsg::NetlistGlobalPromotion]
+INFO     : Creating interface clock buffer hdmi_clk5x_i~CLKBUF [DBMsg::NetlistInterfaceClockBufferCreated]
+INFO     : Net mipi_clkcal_i promoted to global due to interface constraints [DBMsg::NetlistGlobalPromotion]
+INFO     : Creating interface clock buffer mipi_clkcal_i~CLKBUF [DBMsg::NetlistInterfaceClockBufferCreated]
+           ***** Beginning stage packed netlist loading ... *****
+INFO     : Read proto netlist file F:/FPGA_NEW/111/work_pnr\mem_test.net_proto
+INFO     : Read proto netlist for file "F:/FPGA_NEW/111/work_pnr\mem_test.net_proto" took 0.014 seconds
+INFO     : Setup net and block data structure took 0.263 seconds
+INFO     : Packed netlist loading took 0.2809544 seconds [FlowMsg::StageDuration]
+INFO     :     Packed netlist loading took 0.28125 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Packed netlist loading virtual memory usage: begin = 158.88 MB, end = 158.88 MB, delta = 0 MB [FlowMsg::VMUsage]
+INFO     :     Packed netlist loading peak virtual memory usage = 158.88 MB [FlowMsg::VMUsage::Peak]
+INFO     : Packed netlist loading resident set memory usage: begin = 170.348 MB, end = 170.384 MB, delta = 0.036 MB [FlowMsg::RSSUsage]
+INFO     :     Packed netlist loading peak resident set memory usage = 170.384 MB [FlowMsg::RSSUsage::Peak]
+           ***** Ending stage packed netlist loading *****
+           
+           ***** Beginning stage pre-placement ... *****
+           
+           ***** Ending stage pre-placement *****
+           
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] No clocks matched 'mipi_clkesc_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] No clocks matched 'mipi_clkcal_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] set_clock_groups: No valid clock(s) found for -group 'mipi_clkesc_i mipi_clkcal_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:20] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:21] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:21] No clocks matched 'mipi_pixclk_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:21] set_clock_groups: No valid clock(s) found for -group 'mipi_pixclk_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:21] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:21] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:22] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:22] No clocks matched 'Axi0Clk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:22] set_clock_groups: No valid clock(s) found for -group 'Axi0Clk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:22] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:22] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:23] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:23] No clocks matched 'clk_cmos'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:23] set_clock_groups: No valid clock(s) found for -group 'clk_cmos'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:23] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:23] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] No clocks matched 'hdmi_clk1x_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] No clocks matched 'hdmi_clk5x_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] No clocks matched 'hdmi_clk2x_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] set_clock_groups: No valid clock(s) found for -group 'hdmi_clk1x_i hdmi_clk2x_i hdmi_clk5x_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:24] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] No clocks matched 'tx_slowclk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] No clocks matched 'tx_fastclk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] set_clock_groups: No valid clock(s) found for -group 'tx_slowclk tx_fastclk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] set_clock_groups: No valid clock group(s) specified
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:25] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:29] No valid object(s) found for 'mipi_clkesc_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:29] No valid pin(s) found for clock
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:29] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:33] No valid object(s) found for 'clk_cmos'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:33] No valid pin(s) found for clock
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:33] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:43] No valid object(s) found for 'tx_fastclk'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:43] No valid pin(s) found for clock
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:43] Unable to run 'create_clock' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[0]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:168] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:168] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_VSYNC_i[0]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:169] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:169] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_0_HSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[0]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[2]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:174] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:174] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[0]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[2]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[3]'
+WARNING  : No ports matched 'mipi_rx_0_CNT_i[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:175] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:175] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ERROR[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:178] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:178] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ERROR[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:179] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:179] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ULPS_CLK'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:180] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:180] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ULPS_CLK'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:181] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:181] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ULPS[2]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[3]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[0]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:182] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:182] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_0_ULPS[0]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[2]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[3]'
+WARNING  : No ports matched 'mipi_rx_0_ULPS[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:183] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:183] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[0]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:188] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:188] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[1]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[0]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_1_VSYNC_i[2]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:189] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:189] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[0]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:190] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:190] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[2]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[0]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[3]'
+WARNING  : No ports matched 'mipi_rx_1_HSYNC_i[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:191] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:191] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_VALID_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:192] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:192] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_VALID_i'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:193] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:193] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[2]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[0]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[3]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:194] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:194] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[0]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[2]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[3]'
+WARNING  : No ports matched 'mipi_rx_1_CNT_i[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:195] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:195] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_DATA_i[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:196] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:196] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_DATA_i[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:197] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:197] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ERROR[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:198] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:198] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ERROR[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:199] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:199] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ULPS_CLK'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:200] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:200] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ULPS_CLK'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:201] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:201] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ULPS[3]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[2]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[0]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[1]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:202] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:202] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'mipi_rx_1_ULPS[0]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[1]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[3]'
+WARNING  : No ports matched 'mipi_rx_1_ULPS[2]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:203] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:203] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_AREADY_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:237] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:237] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_AREADY_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:238] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:238] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_BID_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:239] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:239] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_BID_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:240] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:240] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_BVALID_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:241] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:241] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_BVALID_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:242] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:242] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RDATA_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:243] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:243] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RDATA_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:244] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:244] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RID_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:245] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:245] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RID_0[*]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:246] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:246] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RLAST_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:247] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:247] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RLAST_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:248] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:248] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RRESP_0[1]'
+WARNING  : No ports matched 'DdrCtrl_RRESP_0[0]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:249] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:249] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RRESP_0[1]'
+WARNING  : No ports matched 'DdrCtrl_RRESP_0[0]'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:250] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:250] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RVALID_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:251] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:251] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_RVALID_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:252] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:252] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_WREADY_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:253] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:253] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'DdrCtrl_WREADY_0'
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:254] set_input_delay: No valid input port(s) found
+WARNING  : [SDC F:/FPGA_NEW/111/t35_sc130gs.sdc:254] Unable to run 'set_input_delay' constraint due to warnings found
+INFO     : SDC file 'F:/FPGA_NEW/111/t35_sc130gs.sdc' parsed successfully.
+           ***** Beginning stage initial placement ... *****
+INFO     : Reading core interface constraints file "F:/FPGA_NEW/111/outflow/mem_test.interface.csv" [DBMsg::CoreInterfaceConstraintsFileReading]
+INFO     : Successfully read core interface constraints file "F:/FPGA_NEW/111/outflow/mem_test.interface.csv" [DBMsg::CoreInterfaceConstraintsFileLoadSuccess]
+INFO     : Writing IO placement constraints to "F:/FPGA_NEW/111/outflow\mem_test.interface.io" [DBMsg::IOPlacementConstraintsFileWriting]
+INFO     : Reading placement constraints from 'F:/FPGA_NEW/111/outflow\mem_test.interface.io'.
+INFO     : Reading placement constraints from 'F:/FPGA_NEW/111/work_pnr\mem_test.io_place'.
+           ***** Ending stage initial placement *****
+           
+           ***** Beginning stage placement ... *****
+INFO     : Found 31 synchronizers as follows: [DBMsg::DatabaseSynchronizers]
+INFO     :     Synchronizer 0: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     shape_disp_meta[2]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     shape_display_id_hdmi[2]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 1: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     shape_disp_meta[1]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     shape_display_id_hdmi[1]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 2: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     color_id_meta[2]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     color_id_hdmi[2]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 3: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     color_id_meta[1]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     color_id_hdmi[1]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 4: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][13]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][13]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[13]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 5: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][5]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][5]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[5]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 6: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][11]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][11]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[11]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 7: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][12]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][12]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[12]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 8: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][4]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][4]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[4]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 9: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][7]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][7]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[7]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 10: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][9]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][9]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[9]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 11: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][10]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][10]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[10]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 12: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     color_id_meta[0]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     color_id_hdmi[0]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 13: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/genblk2.rd_rst[0]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/genblk2.rd_rst[1]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 14: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     shape_disp_meta[0]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     shape_display_id_hdmi[0]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 15: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][8]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][8]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[8]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 16: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     color_valid_meta~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     color_valid_hdmi~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 17: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][3]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][3]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[3]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 18: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][6]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][6]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[6]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 19: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/genblk2.wr_rst[0]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/genblk2.wr_rst[1]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 20: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][5]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][5]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[5]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 21: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][4]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][4]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[4]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 22: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][3]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][3]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[3]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 23: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][2]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][2]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[2]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 24: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][6]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][6]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[6]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 25: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][0]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][0]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[0]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 26: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][1]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][1]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[1]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 27: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][7]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][7]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[7]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 28: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][8]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][8]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[8]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 29: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][9]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][9]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[9]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     Synchronizer 30: [DBMsg::DatabaseSynchronizers::SynchronizerID]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][10]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][10]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     :     u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[10]~FF: [DBMsg::DatabaseSynchronizers::SynchronizerFF]
+INFO     : Chip::LoadDelayLookupTable
+INFO     : Starting Global Placer with 16 threads ...
+            ----------     -------  --------------     -------
+             Iteration       WHPWL Worst Slack (ps) Convergence
+            ----------     -------  --------------     -------
+INFO     :           1    10190779           -1759         1.7%
+INFO     :           2    10732995           -1515         1.8%
+INFO     :           3     8751432           -1505         2.1%
+INFO     :           4     6729658           -1574         2.7%
+INFO     :           5     2422966           -2436         5.7%
+INFO     :           6      949684           -2472        11.7%
+INFO     :           7      731434           -2709        16.0%
+INFO     :           8      664103           -3279        18.2%
+INFO     :           9      552536           -4660        22.0%
+INFO     :          10      509232           -4639        27.6%
+INFO     :          11      486197           -3718        30.6%
+INFO     :          12      468966           -3471        33.5%
+INFO     :          13      477074           -3187        33.6%
+INFO     :          14      471378           -3246        34.7%
+INFO     :          15      473856           -3224        35.6%
+INFO     :          16      475879           -3735        36.7%
+INFO     :          17      455362           -4976        40.1%
+INFO     :          18      454593           -4184        40.8%
+INFO     :          19      447292           -4339        42.2%
+INFO     :          20      434099           -4591        44.2%
+INFO     :          21      421592           -4791        46.6%
+INFO     :          22      415400           -4926        48.6%
+INFO     :          23      397894           -5482        52.2%
+INFO     :          24      392122           -5919        53.6%
+INFO     :          25      384447           -5943        55.1%
+INFO     :          26      380346           -6695        56.8%
+INFO     :          27      374169           -6424        58.4%
+INFO     :          28      367651           -6408        60.2%
+INFO     :          29      362111           -6579        62.3%
+INFO     :          30      357971           -7644        64.3%
+INFO     :          31      354556           -7380        65.8%
+INFO     :          32      351778           -6491        67.5%
+INFO     :          33      349632           -6948        68.5%
+INFO     :          34      348019           -7231        69.5%
+INFO     :          35      347472           -7866        70.1%
+INFO     :          36      347671           -6939        71.3%
+INFO     :          37      346162           -7369        72.9%
+INFO     :          38      346108           -7346        73.5%
+INFO     :          39      345843           -8075        75.0%
+INFO     :          40      345490           -7378        75.6%
+INFO     :          41      338120           -7336        77.8%
+INFO     :          42      336123           -8143        78.4%
+INFO     :          43      333789           -7297        79.1%
+INFO     :          44      332250           -8155        80.2%
+INFO     :          45      331272           -8270        81.4%
+INFO     :          46      331765           -8217        82.4%
+INFO     :          47      331128           -8881        83.7%
+INFO     :          48      330968           -8650        84.6%
+INFO     :          49      330908           -8208        85.4%
+INFO     :          50      331285           -8356        85.7%
+INFO     :          51      331819           -8727        86.4%
+INFO     :          52      331054           -7909        87.4%
+INFO     :          53      332282           -8845        88.2%
+INFO     :          54      333754          -10409        89.1%
+INFO     :          55      332652          -10273        89.7%
+INFO     :          56      333900          -10676        90.2%
+INFO     :          57      334894           -9606        90.9%
+INFO     :          58      335917           -9269        91.3%
+INFO     :          59      336231           -9266        91.8%
+INFO     :          60      337369          -10431        92.4%
+INFO     :          61      338561          -10173        93.0%
+INFO     :          62      330701          -10344        93.0%
+INFO     :          63      332261           -9019        94.1%
+INFO     :          64      333208           -9539        95.6%
+INFO     :          65      333944          -10139        96.4%
+INFO     :          66      335787           -9408        96.5%
+INFO     :          67      336953           -9634        97.0%
+INFO     :          68      337074           -9701        97.3%
+INFO     : Starting Annealer
+            ----------     -------  --------------     -------
+             Iteration       WHPWL  Delay Max (ps)     R Limit
+            ----------     -------  --------------     -------
+INFO     :           0      123259           22090        30.0
+INFO     :           1      107211           19018        28.4
+INFO     :           2       97217           16804        26.8
+INFO     :           3       95457           16064        25.2
+INFO     :           4       92802           15590        23.7
+INFO     :           5       91038           15578        22.1
+INFO     :           6       89919           15274        20.6
+INFO     :           7       88369           15274        19.2
+INFO     :           8       87415           15231        17.9
+INFO     :           9       86454           15231        16.7
+INFO     :          10       85244           15231        15.5
+INFO     :          11       83979           14021        14.4
+INFO     :          12       82884           14021        13.4
+INFO     :          13       81948           13886        12.5
+INFO     :          14       81170           13956        11.6
+INFO     :          15       80284           13886        10.7
+INFO     :          16       79575           13951         9.9
+INFO     :          17       78974           13956         9.2
+INFO     :          18       78352           13956         8.6
+INFO     :          19       77340           13956         7.9
+INFO     :          20       76396           13957         7.3
+INFO     :          21       75347           13951         6.8
+INFO     :          22       74726           13885         6.3
+INFO     :          23       73956           13885         5.9
+INFO     :          24       73273           13957         5.4
+INFO     :          25       72558           13950         5.1
+INFO     :          26       71941           13957         4.7
+INFO     :          27       71296           13957         4.4
+INFO     :          28       70719           13885         4.0
+INFO     :          29       70220           13950         3.7
+INFO     :          30       69810           13950         3.5
+INFO     :          31       69357           13957         3.2
+INFO     :          32       68828           13885         3.0
+INFO     :          33       68482           13957         2.8
+INFO     :          34       68232           13957         2.6
+INFO     :          35       67879           13950         2.4
+INFO     :          36       67782           13885         2.2
+INFO     :          37       67516           13956         2.1
+INFO     :          38       67332           13957         1.9
+INFO     :          39       67082           13950         1.8
+INFO     :          40       66972           13886         1.6
+INFO     :          41       66814           13957         1.5
+INFO     :          42       66720           13885         1.4
+INFO     :          43       66422           14731         1.3
+INFO     :          44       66283           13956         1.2
+INFO     : Starting incremental timing annealer
+INFO     : Starting incremental timing quench 1 with temperature 0.1 and 0.2 moves per pass
+            ----------     -------  --------------     -------
+             Iteration       WHPWL  Delay Max (ps)     R Limit
+            ----------     -------  --------------     -------
+INFO     :           0       66558           13885        30.0
+INFO     :           1       68324           13885        27.2
+INFO     :           2       70312           13885        24.6
+INFO     :           3       71146           13885        22.1
+INFO     :           4       71412           13885        19.9
+INFO     :           5       71330           13885        17.9
+INFO     :           6       71098           13885        16.1
+INFO     :           7       70938           13885        14.5
+INFO     :           8       70745           13885        13.0
+INFO     :           9       70568           13885        11.7
+INFO     :          10       70466           13885        10.6
+INFO     :          11       70453           13885         9.5
+INFO     :          12       70373           13885         8.6
+INFO     :          13       70151           13885         7.7
+INFO     :          14       70058           13885         6.9
+INFO     :          15       69660           13885         6.3
+INFO     :          16       68906           13885         5.6
+INFO     : Placement successful: 15656 cells are placed
+INFO     : Peak congestion smeared over 4x4 of the chip is 0.735508 at 107,423
+INFO     : Peak congestion smeared over 1/16 of the chip is 0.535527 at 105,422
+INFO     : Peak congestion smeared over 1/4 of the chip is 0.287207 at 130,403
+INFO     : Congestion-weighted HPWL per net: 13.5833
+INFO     : Reading placement constraints from 'F:/FPGA_NEW/111/outflow/mem_test.qplace'.
+INFO     : Finished Realigning Types (3634 blocks needed type change)
+INFO     : Completed placement consistency check successfully.
+INFO     : Successfully created FPGA place file 'F:/FPGA_NEW/111/outflow/mem_test.place'
+INFO     : Placement took 41.8932526 seconds [FlowMsg::StageDuration]
+INFO     :     Placement took 148.984375 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Placement virtual memory usage: begin = 164.076 MB, end = 285.668 MB, delta = 121.592 MB [FlowMsg::VMUsage]
+INFO     :     Placement peak virtual memory usage = 286.872 MB [FlowMsg::VMUsage::Peak]
+INFO     : Placement resident set memory usage: begin = 177.104 MB, end = 303.692 MB, delta = 126.588 MB [FlowMsg::RSSUsage]
+INFO     :     Placement peak resident set memory usage = 306.616 MB [FlowMsg::RSSUsage::Peak]
+           ***** Ending stage placement *****
+           

@@ -1,0 +1,378 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2025.2.288 
+Date: Sat Jun 27 14:07:05 2026
+
+Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+ 
+Family: Trion 
+Device: T35F324
+Top-level Entity Name: mem_test
+Elapsed time for packing: 0 hours 0 minutes 0 seconds
+
+---------- Resource Summary (begin) ----------
+Inputs: 76 / 947 (8.03%)
+Outputs: 290 / 1416 (20.48%)
+Clocks: 7 / 16 (43.75%)
+Logic Elements: 15632 / 31680 (49.34%)
+	LE: LUTs/Adders: 10211 / 31680 (32.23%)
+	LE: Registers: 6631 / 30720 (21.59%)
+Memory Blocks: 24 / 288 (8.33%)
+Multipliers: 0 / 120 (0.00%)
+---------- Resource Summary (end) ----------
+
+
+---------- Memory Block Information (begin) ----------
+
++-----------------------------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+|                                                   NAME                                                    | MODE | READ_WIDTH | WRITE_WIDTH | WRITE_MODE | OUTPUT_REG |
++-----------------------------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+| u_sc2210_raw8_to_rgbx2/u_bayer2rgb/u_VIP_Matrix_Generate_3X3_8Bit/u1_Line_Shift_RAM_8Bit/i62/r_ram__D$c1  | SDP  |     2      |      2      | READ_FIRST |   false    |
+| u_sc2210_raw8_to_rgbx2/u_bayer2rgb/u_VIP_Matrix_Generate_3X3_8Bit/u1_Line_Shift_RAM_8Bit/i62/r_ram__D$12  | SDP  |     2      |      2      | READ_FIRST |   false    |
+|  u_sc2210_raw8_to_rgbx2/u_bayer2rgb/u_VIP_Matrix_Generate_3X3_8Bit/u1_Line_Shift_RAM_8Bit/i62/r_ram__D$2  | SDP  |     2      |      2      | READ_FIRST |   false    |
+| u_sc2210_raw8_to_rgbx2/u_bayer2rgb/u_VIP_Matrix_Generate_3X3_8Bit/u1_Line_Shift_RAM_8Bit/i62/r_ram__D$b12 | SDP  |     2      |      2      | READ_FIRST |   false    |
+| u_sc2210_raw8_to_rgbx2/u_bayer2rgb/u_VIP_Matrix_Generate_3X3_8Bit/u0_Line_Shift_RAM_8Bit/i62/r_ram__D$c1  | SDP  |     2      |      2      | READ_FIRST |   false    |
+| u_sc2210_raw8_to_rgbx2/u_bayer2rgb/u_VIP_Matrix_Generate_3X3_8Bit/u0_Line_Shift_RAM_8Bit/i62/r_ram__D$12  | SDP  |     2      |      2      | READ_FIRST |   false    |
+|  u_sc2210_raw8_to_rgbx2/u_bayer2rgb/u_VIP_Matrix_Generate_3X3_8Bit/u0_Line_Shift_RAM_8Bit/i62/r_ram__D$2  | SDP  |     2      |      2      | READ_FIRST |   false    |
+| u_sc2210_raw8_to_rgbx2/u_bayer2rgb/u_VIP_Matrix_Generate_3X3_8Bit/u0_Line_Shift_RAM_8Bit/i62/r_ram__D$b12 | SDP  |     2      |      2      | READ_FIRST |   false    |
+|                 u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ram/ram__D$02                  | SDP  |     1      |      8      | READ_FIRST |   false    |
+|                 u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ram/ram__D$32                  | SDP  |     1      |      8      | READ_FIRST |   false    |
+|                 u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ram/ram__D$012                 | SDP  |     1      |      8      | READ_FIRST |   false    |
+|                u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ram/ram__D$3b12                 | SDP  |     1      |      8      | READ_FIRST |   false    |
+|                 u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ram/ram__D$312                 | SDP  |     1      |      8      | READ_FIRST |   false    |
+|                u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ram/ram__D$0c12                 | SDP  |     1      |      8      | READ_FIRST |   false    |
+|                u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ram/ram__D$0b12                 | SDP  |     1      |      8      | READ_FIRST |   false    |
+|                u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ram/ram__D$0d12                 | SDP  |     1      |      8      | READ_FIRST |   false    |
+|                u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ram/ram__D$0e12                 | SDP  |     1      |      8      | READ_FIRST |   false    |
+|                u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ram/ram__D$0f12                 | SDP  |     1      |      8      | READ_FIRST |   false    |
+|                 u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ram/ram__D$0g1                 | SDP  |     1      |      8      | READ_FIRST |   false    |
+|                u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ram/ram__D$3c12                 | SDP  |     1      |      8      | READ_FIRST |   false    |
+|                u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ram/ram__D$3d12                 | SDP  |     1      |      8      | READ_FIRST |   false    |
+|                u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ram/ram__D$3e12                 | SDP  |     1      |      8      | READ_FIRST |   false    |
+|                u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ram/ram__D$3f12                 | SDP  |     1      |      8      | READ_FIRST |   false    |
+|                 u_sc2210_raw8_to_rgbx2/u_raw_fifo/u_efx_fifo_top/xefx_fifo_ram/ram__D$3g1                 | SDP  |     1      |      8      | READ_FIRST |   false    |
++-----------------------------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+
+----------- Memory Block Information (end) ----------
+
+
+---------- IO Interface Summary (begin) ----------
+
++------------------------+--------------+
+| Missing Interface Pins | Input/Output |
++------------------------+--------------+
+|     mipi_clkesc_i      |    Input     |
+|      mipi0_sda_i       |    Input     |
+|      mipi1_scl_i       |    Input     |
+|      mipi0_scl_i       |    Input     |
+|      mipi1_sda_i       |    Input     |
+|        uart_rxd        |    Input     |
+|      PllLocked[0]      |    Input     |
+|   DdrCtrl_RDATA_0[0]   |    Input     |
+|   DdrCtrl_RDATA_0[1]   |    Input     |
+|   DdrCtrl_RDATA_0[2]   |    Input     |
+|   DdrCtrl_RDATA_0[3]   |    Input     |
+|   DdrCtrl_RDATA_0[4]   |    Input     |
+|   DdrCtrl_RDATA_0[5]   |    Input     |
+|   DdrCtrl_RDATA_0[6]   |    Input     |
+|   DdrCtrl_RDATA_0[7]   |    Input     |
+|   DdrCtrl_RDATA_0[8]   |    Input     |
+|   DdrCtrl_RDATA_0[9]   |    Input     |
+|  DdrCtrl_RDATA_0[10]   |    Input     |
+|  DdrCtrl_RDATA_0[11]   |    Input     |
+|  DdrCtrl_RDATA_0[12]   |    Input     |
+|  DdrCtrl_RDATA_0[13]   |    Input     |
+|  DdrCtrl_RDATA_0[14]   |    Input     |
+|  DdrCtrl_RDATA_0[15]   |    Input     |
+|  DdrCtrl_RDATA_0[16]   |    Input     |
+|  DdrCtrl_RDATA_0[17]   |    Input     |
+|  DdrCtrl_RDATA_0[18]   |    Input     |
+|  DdrCtrl_RDATA_0[19]   |    Input     |
+|  DdrCtrl_RDATA_0[20]   |    Input     |
+|  DdrCtrl_RDATA_0[21]   |    Input     |
+|  DdrCtrl_RDATA_0[22]   |    Input     |
+|  DdrCtrl_RDATA_0[23]   |    Input     |
+|  DdrCtrl_RDATA_0[24]   |    Input     |
+|  DdrCtrl_RDATA_0[25]   |    Input     |
+|  DdrCtrl_RDATA_0[26]   |    Input     |
+|  DdrCtrl_RDATA_0[27]   |    Input     |
+|  DdrCtrl_RDATA_0[28]   |    Input     |
+|  DdrCtrl_RDATA_0[29]   |    Input     |
+|  DdrCtrl_RDATA_0[30]   |    Input     |
+|  DdrCtrl_RDATA_0[31]   |    Input     |
+|  DdrCtrl_RDATA_0[32]   |    Input     |
+|  DdrCtrl_RDATA_0[33]   |    Input     |
+|  DdrCtrl_RDATA_0[34]   |    Input     |
+|  DdrCtrl_RDATA_0[35]   |    Input     |
+|  DdrCtrl_RDATA_0[36]   |    Input     |
+|  DdrCtrl_RDATA_0[37]   |    Input     |
+|  DdrCtrl_RDATA_0[38]   |    Input     |
+|  DdrCtrl_RDATA_0[39]   |    Input     |
+|  DdrCtrl_RDATA_0[40]   |    Input     |
+|  DdrCtrl_RDATA_0[41]   |    Input     |
+|  DdrCtrl_RDATA_0[42]   |    Input     |
+|  DdrCtrl_RDATA_0[43]   |    Input     |
+|  DdrCtrl_RDATA_0[44]   |    Input     |
+|  DdrCtrl_RDATA_0[45]   |    Input     |
+|  DdrCtrl_RDATA_0[46]   |    Input     |
+|  DdrCtrl_RDATA_0[47]   |    Input     |
+|  DdrCtrl_RDATA_0[48]   |    Input     |
+|  DdrCtrl_RDATA_0[49]   |    Input     |
+|  DdrCtrl_RDATA_0[50]   |    Input     |
+|  DdrCtrl_RDATA_0[51]   |    Input     |
+|  DdrCtrl_RDATA_0[52]   |    Input     |
+|  DdrCtrl_RDATA_0[53]   |    Input     |
+|  DdrCtrl_RDATA_0[54]   |    Input     |
+|  DdrCtrl_RDATA_0[55]   |    Input     |
+|  DdrCtrl_RDATA_0[56]   |    Input     |
+|  DdrCtrl_RDATA_0[57]   |    Input     |
+|  DdrCtrl_RDATA_0[58]   |    Input     |
+|  DdrCtrl_RDATA_0[59]   |    Input     |
+|  DdrCtrl_RDATA_0[60]   |    Input     |
+|  DdrCtrl_RDATA_0[61]   |    Input     |
+|  DdrCtrl_RDATA_0[62]   |    Input     |
+|  DdrCtrl_RDATA_0[63]   |    Input     |
+|  DdrCtrl_RDATA_0[64]   |    Input     |
+|  DdrCtrl_RDATA_0[65]   |    Input     |
+|  DdrCtrl_RDATA_0[66]   |    Input     |
+|  DdrCtrl_RDATA_0[67]   |    Input     |
+|  DdrCtrl_RDATA_0[68]   |    Input     |
+|  DdrCtrl_RDATA_0[69]   |    Input     |
+|  DdrCtrl_RDATA_0[70]   |    Input     |
+|  DdrCtrl_RDATA_0[71]   |    Input     |
+|  DdrCtrl_RDATA_0[72]   |    Input     |
+|  DdrCtrl_RDATA_0[73]   |    Input     |
+|  DdrCtrl_RDATA_0[74]   |    Input     |
+|  DdrCtrl_RDATA_0[75]   |    Input     |
+|  DdrCtrl_RDATA_0[76]   |    Input     |
+|    DdrCtrl_BID_0[0]    |    Input     |
+|  DdrCtrl_RDATA_0[77]   |    Input     |
+|    DdrCtrl_BID_0[1]    |    Input     |
+|  DdrCtrl_RDATA_0[78]   |    Input     |
+|    DdrCtrl_BID_0[2]    |    Input     |
+|  DdrCtrl_RDATA_0[79]   |    Input     |
+|    DdrCtrl_BID_0[3]    |    Input     |
+|  DdrCtrl_RDATA_0[80]   |    Input     |
+|    DdrCtrl_BID_0[4]    |    Input     |
+|  DdrCtrl_RDATA_0[81]   |    Input     |
+|    DdrCtrl_BID_0[5]    |    Input     |
+|  DdrCtrl_RDATA_0[82]   |    Input     |
+|    DdrCtrl_BID_0[6]    |    Input     |
+|  DdrCtrl_RDATA_0[83]   |    Input     |
+|    DdrCtrl_BID_0[7]    |    Input     |
+|  DdrCtrl_RDATA_0[84]   |    Input     |
+|  DdrCtrl_RDATA_0[85]   |    Input     |
+|  DdrCtrl_RDATA_0[86]   |    Input     |
+|    DdrCtrl_BVALID_0    |    Input     |
+|  DdrCtrl_RDATA_0[87]   |    Input     |
+|    DdrCtrl_WREADY_0    |    Input     |
+|  DdrCtrl_RDATA_0[88]   |    Input     |
+|    DdrCtrl_AREADY_0    |    Input     |
+|  DdrCtrl_RDATA_0[89]   |    Input     |
+|  DdrCtrl_RDATA_0[90]   |    Input     |
+|  DdrCtrl_RDATA_0[91]   |    Input     |
+|    DdrCtrl_RID_0[0]    |    Input     |
+|  DdrCtrl_RDATA_0[92]   |    Input     |
+|    DdrCtrl_RID_0[1]    |    Input     |
+|  DdrCtrl_RDATA_0[93]   |    Input     |
+|    DdrCtrl_RID_0[2]    |    Input     |
+|  DdrCtrl_RDATA_0[94]   |    Input     |
+|    DdrCtrl_RID_0[3]    |    Input     |
+|  DdrCtrl_RDATA_0[95]   |    Input     |
+|    DdrCtrl_RID_0[4]    |    Input     |
+|  DdrCtrl_RDATA_0[96]   |    Input     |
+|    DdrCtrl_RID_0[5]    |    Input     |
+|  DdrCtrl_RDATA_0[97]   |    Input     |
+|    DdrCtrl_RID_0[6]    |    Input     |
+|  DdrCtrl_RDATA_0[98]   |    Input     |
+|    DdrCtrl_RID_0[7]    |    Input     |
+|  DdrCtrl_RDATA_0[99]   |    Input     |
+|    DdrCtrl_RLAST_0     |    Input     |
+|  DdrCtrl_RDATA_0[100]  |    Input     |
+|   DdrCtrl_RRESP_0[0]   |    Input     |
+|  DdrCtrl_RDATA_0[101]  |    Input     |
+|   DdrCtrl_RRESP_0[1]   |    Input     |
+|  DdrCtrl_RDATA_0[102]  |    Input     |
+|    DdrCtrl_RVALID_0    |    Input     |
+|  DdrCtrl_RDATA_0[103]  |    Input     |
+|  DdrCtrl_RDATA_0[104]  |    Input     |
+|  DdrCtrl_RDATA_0[105]  |    Input     |
+|  DdrCtrl_RDATA_0[106]  |    Input     |
+|  DdrCtrl_RDATA_0[107]  |    Input     |
+|  DdrCtrl_RDATA_0[108]  |    Input     |
+|  DdrCtrl_RDATA_0[109]  |    Input     |
+|  DdrCtrl_RDATA_0[110]  |    Input     |
+|  DdrCtrl_RDATA_0[111]  |    Input     |
+|  DdrCtrl_RDATA_0[112]  |    Input     |
+|  DdrCtrl_RDATA_0[113]  |    Input     |
+|  DdrCtrl_RDATA_0[114]  |    Input     |
+|  DdrCtrl_RDATA_0[115]  |    Input     |
+|  DdrCtrl_RDATA_0[116]  |    Input     |
+|  DdrCtrl_RDATA_0[117]  |    Input     |
+|  DdrCtrl_RDATA_0[118]  |    Input     |
+|  DdrCtrl_RDATA_0[119]  |    Input     |
+|  DdrCtrl_RDATA_0[120]  |    Input     |
+|  DdrCtrl_RDATA_0[121]  |    Input     |
+|  DdrCtrl_RDATA_0[122]  |    Input     |
+|  DdrCtrl_RDATA_0[123]  |    Input     |
+|  DdrCtrl_RDATA_0[124]  |    Input     |
+|  DdrCtrl_RDATA_0[125]  |    Input     |
+|  DdrCtrl_RDATA_0[126]  |    Input     |
+|  DdrCtrl_RDATA_0[127]  |    Input     |
+|       tx_fastclk       |    Input     |
+|        clk_cmos        |    Input     |
+|   mipi_rx_1_ULPS[3]    |    Input     |
+|   mipi_rx_1_ULPS[2]    |    Input     |
+|   mipi_rx_1_ULPS[1]    |    Input     |
+|   mipi_rx_1_ULPS[0]    |    Input     |
+|   mipi_rx_1_ULPS_CLK   |    Input     |
+|  mipi_rx_1_ERROR[17]   |    Input     |
+|  mipi_rx_1_ERROR[16]   |    Input     |
+|  mipi_rx_1_ERROR[15]   |    Input     |
+|  mipi_rx_1_ERROR[14]   |    Input     |
+|  mipi_rx_1_ERROR[13]   |    Input     |
+|  mipi_rx_1_ERROR[12]   |    Input     |
+|  mipi_rx_1_ERROR[11]   |    Input     |
+|  mipi_rx_1_ERROR[10]   |    Input     |
+|   mipi_rx_1_ERROR[9]   |    Input     |
+|   mipi_rx_1_ERROR[8]   |    Input     |
+|   mipi_rx_1_ERROR[7]   |    Input     |
+|   mipi_rx_1_ERROR[6]   |    Input     |
+|   mipi_rx_1_ERROR[5]   |    Input     |
+|   mipi_rx_1_ERROR[4]   |    Input     |
+|   mipi_rx_1_ERROR[3]   |    Input     |
+|   mipi_rx_1_ERROR[2]   |    Input     |
+|   mipi_rx_1_ERROR[1]   |    Input     |
+|   mipi_rx_1_ERROR[0]   |    Input     |
+|   mipi_rx_1_VC_i[1]    |    Input     |
+|   mipi_rx_1_VC_i[0]    |    Input     |
+|   mipi_rx_1_VALID_i    |    Input     |
+|  mipi_rx_1_TYPE_i[5]   |    Input     |
+|  mipi_rx_1_TYPE_i[4]   |    Input     |
+|  mipi_rx_1_TYPE_i[3]   |    Input     |
+|  mipi_rx_1_TYPE_i[2]   |    Input     |
+|  mipi_rx_1_TYPE_i[1]   |    Input     |
+|  mipi_rx_1_TYPE_i[0]   |    Input     |
+|  mipi_rx_1_DATA_i[63]  |    Input     |
+|  mipi_rx_1_DATA_i[62]  |    Input     |
+|  mipi_rx_1_DATA_i[61]  |    Input     |
+|  mipi_rx_1_DATA_i[60]  |    Input     |
+|  mipi_rx_1_DATA_i[59]  |    Input     |
+|  mipi_rx_1_DATA_i[58]  |    Input     |
+|  mipi_rx_1_DATA_i[57]  |    Input     |
+|  mipi_rx_1_DATA_i[56]  |    Input     |
+|  mipi_rx_1_DATA_i[55]  |    Input     |
+|  mipi_rx_1_DATA_i[54]  |    Input     |
+|  mipi_rx_1_DATA_i[53]  |    Input     |
+|  mipi_rx_1_DATA_i[52]  |    Input     |
+|  mipi_rx_1_DATA_i[51]  |    Input     |
+|  mipi_rx_1_DATA_i[50]  |    Input     |
+|  mipi_rx_1_DATA_i[49]  |    Input     |
+|  mipi_rx_1_DATA_i[48]  |    Input     |
+|  mipi_rx_1_DATA_i[47]  |    Input     |
+|  mipi_rx_1_DATA_i[46]  |    Input     |
+|  mipi_rx_1_DATA_i[45]  |    Input     |
+|  mipi_rx_1_DATA_i[44]  |    Input     |
+|  mipi_rx_1_DATA_i[43]  |    Input     |
+|  mipi_rx_1_DATA_i[42]  |    Input     |
+|  mipi_rx_1_DATA_i[41]  |    Input     |
+|  mipi_rx_1_DATA_i[40]  |    Input     |
+|  mipi_rx_1_DATA_i[39]  |    Input     |
+|  mipi_rx_1_DATA_i[38]  |    Input     |
+|  mipi_rx_1_DATA_i[37]  |    Input     |
+|  mipi_rx_1_DATA_i[36]  |    Input     |
+|  mipi_rx_1_DATA_i[35]  |    Input     |
+|  mipi_rx_1_DATA_i[34]  |    Input     |
+|  mipi_rx_1_DATA_i[33]  |    Input     |
+|  mipi_rx_1_DATA_i[32]  |    Input     |
+|  mipi_rx_1_DATA_i[31]  |    Input     |
+|  mipi_rx_1_DATA_i[30]  |    Input     |
+|  mipi_rx_1_DATA_i[29]  |    Input     |
+|  mipi_rx_1_DATA_i[28]  |    Input     |
+|  mipi_rx_1_DATA_i[27]  |    Input     |
+|  mipi_rx_1_DATA_i[26]  |    Input     |
+|  mipi_rx_1_DATA_i[25]  |    Input     |
+|  mipi_rx_1_DATA_i[24]  |    Input     |
+|  mipi_rx_1_DATA_i[23]  |    Input     |
+|  mipi_rx_1_DATA_i[22]  |    Input     |
+|  mipi_rx_1_DATA_i[21]  |    Input     |
+|  mipi_rx_1_DATA_i[20]  |    Input     |
+|  mipi_rx_1_DATA_i[19]  |    Input     |
+|  mipi_rx_1_DATA_i[18]  |    Input     |
+|  mipi_rx_1_DATA_i[17]  |    Input     |
+|  mipi_rx_1_DATA_i[16]  |    Input     |
+|  mipi_rx_1_DATA_i[15]  |    Input     |
+|  mipi_rx_1_DATA_i[14]  |    Input     |
+|  mipi_rx_1_DATA_i[13]  |    Input     |
+|  mipi_rx_1_DATA_i[12]  |    Input     |
+|  mipi_rx_1_DATA_i[11]  |    Input     |
+|  mipi_rx_1_DATA_i[10]  |    Input     |
+|  mipi_rx_1_DATA_i[9]   |    Input     |
+|  mipi_rx_1_DATA_i[8]   |    Input     |
+|  mipi_rx_1_DATA_i[7]   |    Input     |
+|  mipi_rx_1_DATA_i[6]   |    Input     |
+|  mipi_rx_1_DATA_i[5]   |    Input     |
+|  mipi_rx_1_DATA_i[4]   |    Input     |
+|  mipi_rx_1_DATA_i[3]   |    Input     |
+|  mipi_rx_1_DATA_i[2]   |    Input     |
+|  mipi_rx_1_DATA_i[1]   |    Input     |
+|  mipi_rx_1_DATA_i[0]   |    Input     |
+|   mipi_rx_1_CNT_i[3]   |    Input     |
+|   mipi_rx_1_CNT_i[2]   |    Input     |
+|   mipi_rx_1_CNT_i[1]   |    Input     |
+|   mipi_rx_1_CNT_i[0]   |    Input     |
+|  mipi_rx_1_HSYNC_i[3]  |    Input     |
+|  mipi_rx_1_VSYNC_i[3]  |    Input     |
+|  mipi_rx_1_HSYNC_i[2]  |    Input     |
+|  mipi_rx_1_VSYNC_i[2]  |    Input     |
+|  mipi_rx_1_HSYNC_i[1]  |    Input     |
+|  mipi_rx_1_VSYNC_i[1]  |    Input     |
+|  mipi_rx_1_HSYNC_i[0]  |    Input     |
+|  mipi_rx_1_VSYNC_i[0]  |    Input     |
+|   mipi_rx_0_ULPS[3]    |    Input     |
+|   mipi_rx_0_ULPS[2]    |    Input     |
+|   mipi_rx_0_ULPS[1]    |    Input     |
+|   mipi_rx_0_ULPS[0]    |    Input     |
+|   mipi_rx_0_ULPS_CLK   |    Input     |
+|  mipi_rx_0_ERROR[17]   |    Input     |
+|  mipi_rx_0_ERROR[16]   |    Input     |
+|  mipi_rx_0_ERROR[15]   |    Input     |
+|  mipi_rx_0_ERROR[14]   |    Input     |
+|  mipi_rx_0_ERROR[13]   |    Input     |
+|  mipi_rx_0_ERROR[12]   |    Input     |
+|  mipi_rx_0_ERROR[11]   |    Input     |
+|  mipi_rx_0_ERROR[10]   |    Input     |
+|   mipi_rx_0_ERROR[9]   |    Input     |
+|   mipi_rx_0_ERROR[8]   |    Input     |
+|   mipi_rx_0_ERROR[7]   |    Input     |
+|   mipi_rx_0_ERROR[6]   |    Input     |
+|   mipi_rx_0_ERROR[5]   |    Input     |
+|   mipi_rx_0_ERROR[4]   |    Input     |
+|   mipi_rx_0_ERROR[3]   |    Input     |
+|   mipi_rx_0_ERROR[2]   |    Input     |
+|   mipi_rx_0_ERROR[1]   |    Input     |
+|   mipi_rx_0_ERROR[0]   |    Input     |
+|   mipi_rx_0_VC_i[1]    |    Input     |
+|   mipi_rx_0_VC_i[0]    |    Input     |
+|  mipi_rx_0_TYPE_i[5]   |    Input     |
+|  mipi_rx_0_TYPE_i[4]   |    Input     |
+|  mipi_rx_0_TYPE_i[3]   |    Input     |
+|  mipi_rx_0_TYPE_i[2]   |    Input     |
+|  mipi_rx_0_TYPE_i[1]   |    Input     |
+|  mipi_rx_0_TYPE_i[0]   |    Input     |
+|   mipi_rx_0_CNT_i[3]   |    Input     |
+|   mipi_rx_0_CNT_i[2]   |    Input     |
+|   mipi_rx_0_CNT_i[1]   |    Input     |
+|   mipi_rx_0_CNT_i[0]   |    Input     |
+|  mipi_rx_0_HSYNC_i[3]  |    Input     |
+|  mipi_rx_0_VSYNC_i[3]  |    Input     |
+|  mipi_rx_0_HSYNC_i[2]  |    Input     |
+|  mipi_rx_0_VSYNC_i[2]  |    Input     |
+|  mipi_rx_0_HSYNC_i[1]  |    Input     |
+|  mipi_rx_0_VSYNC_i[1]  |    Input     |
+|  mipi_rx_0_VSYNC_i[0]  |    Input     |
++------------------------+--------------+
+
+----------- IO Interface Summary (end) ----------
+
+Elapsed time for placement: 0 hours 0 minutes 41 seconds

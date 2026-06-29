@@ -1,0 +1,25 @@
+Running: efx_run_pgm.py mem_test --family Trion --device T35F324 --output_dir outflow --work_dir work_pnr --opt mode=active width=1 enable_roms=smart spi_low_power_mode=on io_weak_pullup=on oscillator_clock_divider=DIV8 bitstream_compression=on enable_external_master_clock=off active_capture_clk_edge=negedge jtag_usercode=0xFFFFFFFF release_tri_then_reset=on four_byte_addressing=off
+C:/Efinity/2025.2\bin\efx_pgm.exe --interface_designer_settings outflow\mem_test_or.ini --periph outflow\mem_test.lpf --family Trion --device T35F324 --source C:\Users\Lenovo\Desktop\111\work_pnr\mem_test.lbf --dest outflow\mem_test.hex --mode=active --width=1 --enable_roms=smart --spi_low_power_mode=on --io_weak_pullup=on --oscillator_clock_divider=DIV8 --bitstream_compression=on --enable_external_master_clock=off --active_capture_clk_edge=negedge --jtag_usercode=0xFFFFFFFF --release_tri_then_reset=on --four_byte_addressing=off
+INFO     : Efinix FPGA Bitstream Generator.
+INFO     : Version: 2025.2.288.3.8 
+INFO     : Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+INFO     : Compiled: Jan 28 2026.
+INFO     : Using source file "C:\Users\Lenovo\Desktop\111\work_pnr\mem_test.lbf"
+INFO     : Generating HEX programming file for device "T35F324", family "Trion"
+INFO     : Using periphery source file "outflow\mem_test.lpf"
+INFO     : Generating bit file: "outflow\mem_test.bit"
+INFO     : HEX Generation Options Summary:
+INFO     : 	Listing options specified to bitstream generation:
+INFO     : 	spi_low_power_mode                       = on
+INFO     : 	oscillator_clock_divider                 = DIV8
+INFO     : 	io_weak_pullup                           = on
+INFO     : 	enable_remote_update                     = off
+INFO     : 	release_tri_then_reset                   = on
+INFO     : Finished generating "outflow\mem_test.hex"
+INFO     : Efinix Bitstream Generator took 1.085159 seconds [FlowMsg::StageDuration]
+INFO     :     Efinix Bitstream Generator took 0.84375 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Efinix Bitstream Generator virtual memory usage: begin = 2.6 MB, end = 10.936 MB, delta = 8.336 MB [FlowMsg::VMUsage]
+INFO     :     Efinix Bitstream Generator peak virtual memory usage = 80.468 MB [FlowMsg::VMUsage::Peak]
+INFO     : Efinix Bitstream Generator resident set memory usage: begin = 9.324 MB, end = 20.672 MB, delta = 11.348 MB [FlowMsg::RSSUsage]
+INFO     :     Efinix Bitstream Generator peak resident set memory usage = 89.668 MB [FlowMsg::RSSUsage::Peak]
+Stage completed: pgm

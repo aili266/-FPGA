@@ -1,0 +1,568 @@
+INFO     : Efinix FPGA Synthesis.
+INFO     : Version: 2025.2.288
+INFO     : Compiled: Nov 13 2025.
+INFO     : 
+INFO     : Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+
+INFO     : Reading project database "F:/FPGA_NEW/111/mem_test.xml" [FlowMsg::ProjectDatabaseReading]
+INFO     : Analyzing Verilog file 'D://sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(8): compiling module 'EFX_IBUF' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(16): compiling module 'EFX_OBUF' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(23): compiling module 'EFX_IO_BUF' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(33): compiling module 'EFX_CLKOUT' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(41): compiling module 'EFX_IREG' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(51): compiling module 'EFX_OREG' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(60): compiling module 'EFX_IOREG' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(75): compiling module 'EFX_IDDIO' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(87): compiling module 'EFX_ODDIO' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(99): compiling module 'EFX_GPIO_V1' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(124): compiling module 'EFX_GPIO_V2' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(149): compiling module 'EFX_GPIO_V3' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(186): compiling module 'EFX_PLL_V1' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(205): compiling module 'EFX_PLL_V2' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(231): compiling module 'EFX_PLL_V3' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(279): compiling module 'EFX_OSC_V1' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(285): compiling module 'EFX_OSC_V3' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(294): compiling module 'EFX_FPLL_V1' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(348): compiling module 'EFX_JTAG_V1' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(357): compiling module 'EFX_JTAG_CTRL' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(364): compiling module 'EFX_LVDS_RX_V1' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(381): compiling module 'EFX_LVDS_TX_V1' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(399): compiling module 'EFX_LVDS_RX_V2' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(426): compiling module 'EFX_LVDS_TX_V2' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(446): compiling module 'EFX_LVDS_BIDIR_V2' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(485): compiling module 'EFX_MIPI_TX_LN_V1' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(508): compiling module 'EFX_MIPI_RX_LN_V1' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_peri_lib.v(543): compiling module 'EFX_MIPI_RX_CLK_LN_V1' [VERI-1018]
+INFO     : Reading project database "F:/FPGA_NEW/111/mem_test.xml" [FlowMsg::ProjectDatabaseReading]
+INFO     : ***** Beginning Analysis ... *****
+INFO     : default VHDL library search path is now "D:/sim_models/vhdl/packages/vhdl_2008" [VHDL-1504]
+INFO     : Analyzing Verilog file 'D://sim_models/maplib/efinix_maplib.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'D://sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'D://sim_models/maplib/efinix_maplib.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'D://sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\top_t35.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\t35_i2c\i2c_timing_ctrl_reg16_dat8_wronly.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\t35_i2c\I2C_SC2210_19201080_4Lanes_Config.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\t35_isp\Line_Shift_RAM_8Bit.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\t35_isp\VIP_Matrix_Generate_3X3_8Bit.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\t35_isp\VIP_RAW8_RGB888.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\t35_isp\sc2210_raw8_to_rgbx2.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\vision\color_detector.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\vision\shape_page_ctrl.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\vision\shape_scanner.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\vision\shape_classifier.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\vision\shape_recognition_core.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\dvi_tx\hdmi_result_ui.v' [VERI-1482]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx\hdmi_result_ui.v(4): analyzing included file 'F:\FPGA_NEW\111\src\dvi_tx/ui_color_renderer.v' [VERI-1328]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx\hdmi_result_ui.v(4): back to file 'F:\FPGA_NEW\111\src\dvi_tx\hdmi_result_ui.v' [VERI-2320]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx\hdmi_result_ui.v(5): analyzing included file 'F:\FPGA_NEW\111\src\dvi_tx/ui_shape_renderer.v' [VERI-1328]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx\hdmi_result_ui.v(5): back to file 'F:\FPGA_NEW\111\src\dvi_tx\hdmi_result_ui.v' [VERI-2320]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx\hdmi_result_ui.v(6): analyzing included file 'F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v' [VERI-1328]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx\hdmi_result_ui.v(6): back to file 'F:\FPGA_NEW\111\src\dvi_tx\hdmi_result_ui.v' [VERI-2320]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\dvi_tx\hdmi_top.v' [VERI-1482]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx\hdmi_top.v(144): undeclared symbol 'i_cfg_vid', assumed default net type 'wire' [VERI-2561]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx\hdmi_top.v(145): undeclared symbol 'h_cnt', assumed default net type 'wire' [VERI-2561]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx\hdmi_top.v(146): undeclared symbol 'v_cnt', assumed default net type 'wire' [VERI-2561]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\dvi_tx\dvi_encoder.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\dvi_tx\encode.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\dvi_tx\color_bar_rgb.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\dvi_tx\hdmi_timing_640x480.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\dvi_tx\ui_mode_latch.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\font_rom_ui.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\vid_info_det_v7.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\common\reset_ctrl.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'F:\FPGA_NEW\111\src\uart\simple_uart.v' [VERI-1482]
+INFO     : Analysis took 0.050945 seconds [FlowMsg::StageDuration]
+INFO     :     Analysis took 0.03125 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Analysis virtual memory usage: begin = 52.908 MB, end = 56.012 MB, delta = 3.104 MB [FlowMsg::VMUsage]
+INFO     :     Analysis peak virtual memory usage = 56.02 MB [FlowMsg::VMUsage::Peak]
+INFO     : Analysis resident set memory usage: begin = 58.584 MB, end = 62.712 MB, delta = 4.128 MB [FlowMsg::RSSUsage]
+INFO     :     Analysis peak resident set memory usage = 62.712 MB [FlowMsg::RSSUsage::Peak]
+INFO     : ***** Ending Analysis ... *****
+INFO     : ***** Beginning Elaboration ... *****
+INFO     : F:\FPGA_NEW\111\src\top_t35.v(3): compiling module 'top_t35' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_i2c\i2c_timing_ctrl_reg16_dat8_wronly.v(34): compiling module 'i2c_timing_ctrl_reg16_dat8_wronly(I2C_FREQ=10000)' [VERI-1018]
+WARNING  : F:\FPGA_NEW\111\src\t35_i2c\i2c_timing_ctrl_reg16_dat8_wronly.v(371): expression size 32 truncated to fit in target size 1 [VERI-1209]
+INFO     : F:\FPGA_NEW\111\src\t35_i2c\I2C_SC2210_19201080_4Lanes_Config.v(18): compiling module 'I2C_SC2210_19201080_4Lanes_Config' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_isp\sc2210_raw8_to_rgbx2.v(3): compiling module 'sc2210_raw8_to_rgbx2' [VERI-1018]
+WARNING  : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(108): port 'a_wr_rst_i' remains unconnected for this instance [VERI-1927]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(49): compiling module 'FIFO_W64R8' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(389): compiling module 'efx_fifo_top_3b8f009ad9a44ac5b18136c67c7ba6be(SYNC_STAGE=3,MODE="FWFT",DEPTH=1024,DATA_WIDTH=64,PROGRAMMABLE_FULL="STATIC_SINGLE",PROG_FULL_ASSERT=128,PROG_FULL_NEGATE=128,PROGRAMMABLE_EMPTY="NONE",PROG_EMPTY_ASSERT=0,PROG_EMPTY_NEGATE=2,ASYM_WIDTH_RATIO=1)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(679): compiling module 'efx_fifo_ram_3b8f009ad9a44ac5b18136c67c7ba6be(MODE="FWFT",WR_DEPTH=1024,RD_DEPTH=8192,WDATA_WIDTH=64,WADDR_WIDTH=10,RADDR_WIDTH=13,OUTPUT_REG=0,RAM_MUX_RATIO=8)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(715): extracting RAM for identifier 'ram' [VERI-2571]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(914): compiling module 'efx_fifo_ctl_3b8f009ad9a44ac5b18136c67c7ba6be(SYNC_CLK=0,SYNC_STAGE=3,MODE="FWFT",WR_DEPTH=1024,WADDR_WIDTH=10,RADDR_WIDTH=13,ASYM_WIDTH_RATIO=1,RAM_MUX_RATIO=8,PROGRAMMABLE_FULL="STATIC_SINGLE",PROG_FULL_ASSERT=128,PROG_FULL_NEGATE=128,PROG_EMPTY_NEGATE=2)' [VERI-1018]
+WARNING  : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(1184): expression size 32 truncated to fit in target size 11 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(1185): expression size 32 truncated to fit in target size 14 [VERI-1209]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(300): compiling module 'efx_fifo_bin2gray_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=14)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(129): compiling module 'efx_fifo_datasync_3b8f009ad9a44ac5b18136c67c7ba6be(STAGE=3,WIDTH=14)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(212): compiling module 'efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=14)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(212): compiling module 'efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=13)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(212): compiling module 'efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=12)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(212): compiling module 'efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=11)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(212): compiling module 'efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=10)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(212): compiling module 'efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=9)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(212): compiling module 'efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=8)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(212): compiling module 'efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=7)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(212): compiling module 'efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=6)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(212): compiling module 'efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(212): compiling module 'efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=4)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(212): compiling module 'efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=3)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(212): compiling module 'efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=2)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(300): compiling module 'efx_fifo_bin2gray_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=11)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(129): compiling module 'efx_fifo_datasync_3b8f009ad9a44ac5b18136c67c7ba6be(STAGE=3,WIDTH=11)' [VERI-1018]
+WARNING  : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(104): actual bit length 10 differs from formal bit length 11 for port 'wr_datacount_o' [VERI-1330]
+WARNING  : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(106): actual bit length 13 differs from formal bit length 14 for port 'rd_datacount_o' [VERI-1330]
+WARNING  : F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v(88): input port 'a_wr_rst_i' is not connected on this instance [VDB-1013]
+INFO     : F:\FPGA_NEW\111\src\t35_isp\VIP_RAW8_RGB888.v(31): compiling module 'VIP_RAW8_RGB888(IMG_HDISP=14'b011110000000,IMG_VDISP=14'b010000111000)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_isp\VIP_Matrix_Generate_3X3_8Bit.v(35): compiling module 'VIP_Matrix_Generate_3X3_8Bit(IMG_HDISP=14'b011110000000,IMG_VDISP=14'b010000111000)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_isp\Line_Shift_RAM_8Bit.v(2): compiling module 'Line_Shift_RAM_8Bit(DATA_DEPTH=14'b011110000000)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_isp\Line_Shift_RAM_8Bit.v(64): extracting RAM for identifier 'r_ram' [VERI-2571]
+INFO     : F:\FPGA_NEW\111\src\t35_isp\Line_Shift_RAM_8Bit.v(2): compiling module 'Line_Shift_RAM_8Bit(DATA_DEPTH=14'b011110000000,DELAY_NUM=1)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\t35_isp\Line_Shift_RAM_8Bit.v(64): extracting RAM for identifier 'r_ram' [VERI-2571]
+INFO     : F:\FPGA_NEW\111\src\vision\color_detector.v(4): compiling module 'color_detector(FAST_LOCK_LINE_STREAK_NEW=4'b0100,FAST_LOCK_LINE_STREAK_SWITCH=4'b0100)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\vision\shape_recognition_core.v(4): compiling module 'shape_recognition_core(SHAPE_PAGE_BTN_DEBOUNCE_MAX=21'b0100000)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\vision\shape_recognition_core.v(113): extracting RAM for identifier 'shape_gray_line_ram' [VERI-2571]
+INFO     : F:\FPGA_NEW\111\src\vision\shape_recognition_core.v(200): extracting RAM for identifier 'shape_preview_ram' [VERI-2571]
+INFO     : F:\FPGA_NEW\111\src\vision\shape_recognition_core.v(201): extracting RAM for identifier 'shape_bg_grid_ram' [VERI-2571]
+INFO     : F:\FPGA_NEW\111\src\vision\shape_recognition_core.v(202): extracting RAM for identifier 'shape_contour_left_ram' [VERI-2571]
+INFO     : F:\FPGA_NEW\111\src\vision\shape_recognition_core.v(203): extracting RAM for identifier 'shape_contour_right_ram' [VERI-2571]
+INFO     : F:\FPGA_NEW\111\src\vision\shape_recognition_core.v(204): extracting RAM for identifier 'shape_fg_contour_left_ram' [VERI-2571]
+INFO     : F:\FPGA_NEW\111\src\vision\shape_recognition_core.v(205): extracting RAM for identifier 'shape_fg_contour_right_ram' [VERI-2571]
+INFO     : F:\FPGA_NEW\111\src\vision\shape_scanner.v(8): compiling module 'shape_scanner' [VERI-1018]
+WARNING  : F:\FPGA_NEW\111\src\vision\shape_scanner.v(244): expression size 12 truncated to fit in target size 10 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\vision\shape_scanner.v(245): expression size 12 truncated to fit in target size 10 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\vision\shape_scanner.v(246): expression size 11 truncated to fit in target size 10 [VERI-1209]
+INFO     : F:\FPGA_NEW\111\src\vision\shape_classifier.v(4): compiling module 'shape_classifier' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\vision\shape_page_ctrl.v(4): compiling module 'shape_page_ctrl(BUTTON_DEBOUNCE_MAX=21'b0100000)' [VERI-1018]
+WARNING  : F:\FPGA_NEW\111\src\vision\shape_recognition_core.v(1408): expression size 18 truncated to fit in target size 17 [VERI-1209]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx\hdmi_result_ui.v(8): compiling module 'hdmi_result_ui' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx\hdmi_timing_640x480.v(4): compiling module 'hdmi_timing_640x480' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx\ui_mode_latch.v(4): compiling module 'ui_mode_latch' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx/ui_color_renderer.v(4): compiling module 'ui_color_renderer' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx/ui_shape_renderer.v(4): compiling module 'ui_shape_renderer' [VERI-1018]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_shape_renderer.v(198): expression size 12 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_shape_renderer.v(200): expression size 12 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_shape_renderer.v(235): expression size 12 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_shape_renderer.v(282): expression size 12 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_shape_renderer.v(283): expression size 12 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_shape_renderer.v(284): expression size 12 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_shape_renderer.v(285): expression size 12 truncated to fit in target size 5 [VERI-1209]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(4): compiling module 'ui_font_overlay' [VERI-1018]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(119): expression size 24 truncated to fit in target size 4 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(125): expression size 24 truncated to fit in target size 4 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(150): expression size 12 truncated to fit in target size 9 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(152): expression size 11 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(208): expression size 12 truncated to fit in target size 9 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(210): expression size 11 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(226): expression size 12 truncated to fit in target size 9 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(228): expression size 11 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(248): expression size 12 truncated to fit in target size 9 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(250): expression size 11 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(271): expression size 12 truncated to fit in target size 9 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(273): expression size 11 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(287): expression size 12 truncated to fit in target size 9 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(289): expression size 11 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(307): expression size 12 truncated to fit in target size 9 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(309): expression size 11 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(327): expression size 12 truncated to fit in target size 9 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(328): expression size 6 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(329): expression size 12 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(349): expression size 12 truncated to fit in target size 9 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(351): expression size 11 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(382): expression size 12 truncated to fit in target size 9 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(383): expression size 6 truncated to fit in target size 5 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx/ui_font_overlay.v(384): expression size 12 truncated to fit in target size 5 [VERI-1209]
+INFO     : F:\FPGA_NEW\111\src\font_rom_ui.v(1): compiling module 'font_rom_ui' [VERI-1018]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx\hdmi_top.v(121): port 'v_active_error' remains unconnected for this instance [VERI-1927]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx\hdmi_top.v(12): compiling module 'hdmi_top' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\common\reset_ctrl.v(90): compiling module 'reset(OUT_RST_ACTIVE="LOW",CYCLE=3)' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\vid_info_det_v7.v(5): compiling module 'vid_info_det' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx\color_bar_rgb.v(3): compiling module 'color_bar_rgb(SYMBOL_WIDTH=8,SYMBOL_NUM=3,PAR_PIXEL_NUM=1,HFP=8'b01111000,HST=8'b010,HACT=12'b011110000000,HBP=8'b01011000,VFP=8'b010100,VST=8'b010,VACT=12'b011000000000,VBP=8'b010100,TEST_MODE=2'b01)' [VERI-1018]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx\hdmi_top.v(144): actual bit length 1 differs from formal bit length 24 for port 'i_cfg_vid' [VERI-1330]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx\hdmi_top.v(145): actual bit length 1 differs from formal bit length 16 for port 'h_cnt' [VERI-1330]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx\hdmi_top.v(146): actual bit length 1 differs from formal bit length 16 for port 'v_cnt' [VERI-1330]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx\dvi_encoder.v(2): compiling module 'dvi_encoder' [VERI-1018]
+INFO     : F:\FPGA_NEW\111\src\dvi_tx\encode.v(46): compiling module 'encode' [VERI-1018]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx\encode.v(167): expression size 9 truncated to fit in target size 8 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\dvi_tx\hdmi_top.v(144): net 'i_cfg_vid' does not have a driver [VDB-1002]
+INFO     : F:\FPGA_NEW\111\src\uart\simple_uart.v(2): compiling module 'simple_uart(CLK_FREQ=96000000,BAUD_RATE=1000000)' [VERI-1018]
+WARNING  : F:\FPGA_NEW\111\src\uart\simple_uart.v(71): expression size 17 truncated to fit in target size 16 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\uart\simple_uart.v(77): expression size 17 truncated to fit in target size 16 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\uart\simple_uart.v(83): expression size 4 truncated to fit in target size 3 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\uart\simple_uart.v(93): expression size 17 truncated to fit in target size 16 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\uart\simple_uart.v(145): expression size 17 truncated to fit in target size 16 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\uart\simple_uart.v(156): expression size 17 truncated to fit in target size 16 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\uart\simple_uart.v(161): expression size 4 truncated to fit in target size 3 [VERI-1209]
+WARNING  : F:\FPGA_NEW\111\src\uart\simple_uart.v(173): expression size 17 truncated to fit in target size 16 [VERI-1209]
+INFO     : Elaboration took 0.1304668 seconds [FlowMsg::StageDuration]
+INFO     :     Elaboration took 0.109375 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Elaboration virtual memory usage: begin = 56.012 MB, end = 106.324 MB, delta = 50.312 MB [FlowMsg::VMUsage]
+INFO     :     Elaboration peak virtual memory usage = 106.324 MB [FlowMsg::VMUsage::Peak]
+INFO     : Elaboration resident set memory usage: begin = 62.752 MB, end = 113.896 MB, delta = 51.144 MB [FlowMsg::RSSUsage]
+INFO     :     Elaboration peak resident set memory usage = 113.896 MB [FlowMsg::RSSUsage::Peak]
+INFO     : ***** Ending Elaboration ... *****
+INFO     : ... Setting Synthesis Option: mode=speed
+INFO     : ***** Beginning Reading Mapping Library ... *****
+INFO     : Analyzing Verilog file 'D://sim_models/maplib/efinix_maplib.v' [VERI-1482]
+INFO     : D://sim_models/maplib/efinix_maplib.v(8): compiling module 'EFX_ADD' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_maplib.v(21): compiling module 'EFX_FF' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_maplib.v(38): compiling module 'EFX_COMB4' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_maplib.v(48): compiling module 'EFX_GBUFCE' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_maplib.v(57): compiling module 'EFX_LUT4' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_maplib.v(65): compiling module 'EFX_MULT' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_maplib.v(100): compiling module 'EFX_DSP48' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_maplib.v(156): compiling module 'EFX_DSP24' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_maplib.v(209): compiling module 'EFX_DSP12' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_maplib.v(262): compiling module 'EFX_RAM_4K' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_maplib.v(322): compiling module 'EFX_RAM_5K' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_maplib.v(394): compiling module 'EFX_DPRAM_5K' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_maplib.v(499): compiling module 'RAMB5' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_maplib.v(561): compiling module 'EFX_RAM_10K' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_maplib.v(653): compiling module 'EFX_RAM10' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_maplib.v(754): compiling module 'EFX_DPRAM10' [VERI-1018]
+INFO     : D://sim_models/maplib/efinix_maplib.v(884): compiling module 'EFX_SRL8' [VERI-1018]
+INFO     : Reading Mapping Library took 0.0068742 seconds [FlowMsg::StageDuration]
+INFO     :     Reading Mapping Library took 0 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : Reading Mapping Library virtual memory usage: begin = 117.612 MB, end = 117.612 MB, delta = 0 MB [FlowMsg::VMUsage]
+INFO     :     Reading Mapping Library peak virtual memory usage = 117.612 MB [FlowMsg::VMUsage::Peak]
+INFO     : Reading Mapping Library resident set memory usage: begin = 125.292 MB, end = 125.296 MB, delta = 0.004 MB [FlowMsg::RSSUsage]
+INFO     :     Reading Mapping Library peak resident set memory usage = 125.296 MB [FlowMsg::RSSUsage::Peak]
+INFO     : ***** Ending Reading Mapping Library ... *****
+INFO     : ... Pre-synthesis checks begin
+INFO     : ... Memory 'ram' is not initialized, assuming empty initial contents. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:715) [EFX-0677]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[31]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[30]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[29]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[28]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[27]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[26]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[25]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[24]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[23]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[22]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[21]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[20]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[19]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[18]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[17]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[16]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[15]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[14]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[13]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : Removing redundant signal : genblk1.genblk1.i[12]. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:737) [EFX-0200]
+WARNING  : (The above message was generated too many times, subsequent similar messages will be muted.) [EFX-0200]
+WARNING  : Re-wiring to GND non-driven net 'u_efx_fifo_top.a_wr_rst_i'. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:88) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'u_efx_fifo_top.a_rd_rst_i'. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:88) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'u_efx_fifo_top.clk_i'. (F:\FPGA_NEW\111\src\t35_ip\FIFO_W64R8.v:88) [EFX-0201]
+INFO     : ... Memory 'r_ram' is not initialized, assuming empty initial contents. (F:\FPGA_NEW\111\src\t35_isp\Line_Shift_RAM_8Bit.v:64) [EFX-0677]
+INFO     : ... Memory 'r_ram' is not initialized, assuming empty initial contents. (F:\FPGA_NEW\111\src\t35_isp\Line_Shift_RAM_8Bit.v:64) [EFX-0677]
+INFO     : Module Instance 'u_bayer2rgb' input pin 'mirror[0]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_bayer2rgb' input pin 'mirror[1]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_scanner' input pin 'shape_bg_grid_rgb444[0]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_scanner' input pin 'shape_bg_grid_rgb444[1]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_scanner' input pin 'shape_bg_grid_rgb444[2]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_scanner' input pin 'shape_bg_grid_rgb444[3]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_scanner' input pin 'shape_bg_grid_rgb444[4]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_scanner' input pin 'shape_bg_grid_rgb444[5]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_scanner' input pin 'shape_bg_grid_rgb444[6]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_scanner' input pin 'shape_bg_grid_rgb444[7]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_scanner' input pin 'shape_bg_grid_rgb444[8]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_scanner' input pin 'shape_bg_grid_rgb444[9]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_scanner' input pin 'shape_bg_grid_rgb444[10]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_scanner' input pin 'shape_bg_grid_rgb444[11]' is tied to constant (=0). [EFX-0266]
+INFO     : ... Memory 'shape_gray_line_ram' is not initialized, assuming empty initial contents. (F:\FPGA_NEW\111\src\vision\shape_recognition_core.v:113) [EFX-0677]
+INFO     : ... Memory 'shape_preview_ram' is not initialized, assuming empty initial contents. (F:\FPGA_NEW\111\src\vision\shape_recognition_core.v:200) [EFX-0677]
+INFO     : ... Memory 'shape_bg_grid_ram' is not initialized, assuming empty initial contents. (F:\FPGA_NEW\111\src\vision\shape_recognition_core.v:201) [EFX-0677]
+INFO     : ... Memory 'shape_contour_left_ram' is not initialized, assuming empty initial contents. (F:\FPGA_NEW\111\src\vision\shape_recognition_core.v:202) [EFX-0677]
+INFO     : ... Memory 'shape_contour_right_ram' is not initialized, assuming empty initial contents. (F:\FPGA_NEW\111\src\vision\shape_recognition_core.v:203) [EFX-0677]
+INFO     : ... Memory 'shape_fg_contour_left_ram' is not initialized, assuming empty initial contents. (F:\FPGA_NEW\111\src\vision\shape_recognition_core.v:204) [EFX-0677]
+INFO     : ... Memory 'shape_fg_contour_right_ram' is not initialized, assuming empty initial contents. (F:\FPGA_NEW\111\src\vision\shape_recognition_core.v:205) [EFX-0677]
+INFO     : Module Instance 'encr' input pin 'c0' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'encr' input pin 'c1' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'encg' input pin 'c0' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'encg' input pin 'c1' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'vid_info_det_inst' input pin 'rst_n' is tied to constant (=1). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'rst_n' is tied to constant (=1). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[1]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[2]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[3]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[4]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[5]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[6]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[7]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[8]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[9]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[10]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[11]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[12]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[13]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[14]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[15]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[16]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[17]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[18]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[19]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[20]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[21]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[22]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'color_bar_rgb_inst' input pin 'i_cfg_vid[23]' is tied to constant (=0). [EFX-0266]
+WARNING  : Re-wiring to GND non-driven net 'i_cfg_vid'. (F:\FPGA_NEW\111\src\dvi_tx\hdmi_top.v:144) [EFX-0201]
+INFO     : Module Instance 'u_i2c_timing_ctrl_reg16_dat8_wronly' input pin 'i2c_config_data[24]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_i2c_timing_ctrl_reg16_dat8_wronly' input pin 'i2c_config_data[25]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_i2c_timing_ctrl_reg16_dat8_wronly' input pin 'i2c_config_data[26]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_i2c_timing_ctrl_reg16_dat8_wronly' input pin 'i2c_config_data[27]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_i2c_timing_ctrl_reg16_dat8_wronly' input pin 'i2c_config_data[28]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_i2c_timing_ctrl_reg16_dat8_wronly' input pin 'i2c_config_data[29]' is tied to constant (=1). [EFX-0266]
+INFO     : Module Instance 'u_i2c_timing_ctrl_reg16_dat8_wronly' input pin 'i2c_config_data[30]' is tied to constant (=1). [EFX-0266]
+INFO     : Module Instance 'u_i2c_timing_ctrl_reg16_dat8_wronly' input pin 'i2c_config_data[31]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'g_color_detect.u_color_detector' input pin 'timer_running' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'g_color_detect.u_color_detector' input pin 'fast_timer_running' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_timer_running' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_preview_ui_active' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_preview_ui_x[0]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_preview_ui_x[1]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_preview_ui_x[2]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_preview_ui_x[3]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_preview_ui_x[4]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_preview_ui_x[5]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_preview_ui_x[6]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_preview_ui_x[7]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_preview_ui_y[0]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_preview_ui_y[1]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_preview_ui_y[2]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_preview_ui_y[3]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_preview_ui_y[4]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_preview_ui_y[5]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_shape_recognition_core' input pin 'shape_preview_ui_y[6]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'sys_rst_n' is tied to constant (=1). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_running_hdmi' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_result_valid_hdmi' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_active_hdmi' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[0]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[1]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[2]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[3]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[4]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[5]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[6]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[7]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[8]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[9]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[10]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[11]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[12]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[13]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[14]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[15]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[16]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[17]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[18]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[19]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[20]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[21]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[22]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi[23]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi_clamped[0]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'u_hdmi_result_ui' input pin 'timer_display_us_hdmi_clamped[1]' is tied to constant (=0). [EFX-0266]
+INFO     : (The above message was generated too many times, subsequent similar messages will be muted.) [EFX-0266]
+INFO     : ... Pre-synthesis checks end (Real time : 0s)
+INFO     : ... NameSpace init begin
+INFO     : ... NameSpace init end (Real time : 0s)
+INFO     : ... Mapping design "top_t35"
+INFO     : ... Hierarchical pre-synthesis "i2c_timing_ctrl_reg16_dat8_wronly(I2C_FREQ=10000)" begin
+INFO     : ... Hierarchical pre-synthesis "i2c_timing_ctrl_reg16_dat8_wronly(I2C_FREQ=10000)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "I2C_SC2210_19201080_4Lanes_Config" begin
+INFO     : ... Wide MUX mapping to ram-net, output: 'LUT_DATA' select size : 9 output width: 24
+INFO     : ... Hierarchical pre-synthesis "I2C_SC2210_19201080_4Lanes_Config" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_ram_3b8f009ad9a44ac5b18136c67c7ba6be(MODE="FWFT",WR_DEPTH=1024,RD_DEPTH=8192,WDATA_WIDTH=64,WADDR_WIDTH=10,RADDR_WIDTH=13,OUTPUT_REG=0,RAM_MUX_RATIO=8)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_ram_3b8f009ad9a44ac5b18136c67c7ba6be(MODE="FWFT",WR_DEPTH=1024,RD_DEPTH=8192,WDATA_WIDTH=64,WADDR_WIDTH=10,RADDR_WIDTH=13,OUTPUT_REG=0,RAM_MUX_RATIO=8)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_bin2gray_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=14)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_bin2gray_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=14)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_datasync_3b8f009ad9a44ac5b18136c67c7ba6be(STAGE=3,WIDTH=14)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_datasync_3b8f009ad9a44ac5b18136c67c7ba6be(STAGE=3,WIDTH=14)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=2)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=2)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=3)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=3)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=4)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=4)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=6)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=6)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=7)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=7)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=8)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=8)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=9)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=9)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=10)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=10)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=11)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=11)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=12)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=12)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=13)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=13)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=14)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_gray2bin_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=14)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_bin2gray_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=11)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_bin2gray_3b8f009ad9a44ac5b18136c67c7ba6be(WIDTH=11)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_datasync_3b8f009ad9a44ac5b18136c67c7ba6be(STAGE=3,WIDTH=11)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_datasync_3b8f009ad9a44ac5b18136c67c7ba6be(STAGE=3,WIDTH=11)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_ctl_3b8f009ad9a44ac5b18136c67c7ba6be(SYNC_CLK=0,SYNC_STAGE=3,MODE="FWFT",WR_DEPTH=1024,WADDR_WIDTH=10,RADDR_WIDTH=13,ASYM_WIDTH_RATIO=1,RAM_MUX_RATIO=8,PROGRAMMABLE_FULL="STATIC_SINGLE",PROG_FULL_ASSERT=128,PROG_FULL_NEGATE=128,PROG_EMPTY_NEGATE=2)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_ctl_3b8f009ad9a44ac5b18136c67c7ba6be(SYNC_CLK=0,SYNC_STAGE=3,MODE="FWFT",WR_DEPTH=1024,WADDR_WIDTH=10,RADDR_WIDTH=13,ASYM_WIDTH_RATIO=1,RAM_MUX_RATIO=8,PROGRAMMABLE_FULL="STATIC_SINGLE",PROG_FULL_ASSERT=128,PROG_FULL_NEGATE=128,PROG_EMPTY_NEGATE=2)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_top_3b8f009ad9a44ac5b18136c67c7ba6be(SYNC_STAGE=3,MODE="FWFT",DEPTH=1024,DATA_WIDTH=64,PROGRAMMABLE_FULL="STATIC_SINGLE",PROG_FULL_ASSERT=128,PROG_FULL_NEGATE=128,PROGRAMMABLE_EMPTY="NONE",PROG_EMPTY_ASSERT=0,PROG_EMPTY_NEGATE=2,ASYM_WIDTH_RATIO=1)" begin
+INFO     : ... Hierarchical pre-synthesis "efx_fifo_top_3b8f009ad9a44ac5b18136c67c7ba6be(SYNC_STAGE=3,MODE="FWFT",DEPTH=1024,DATA_WIDTH=64,PROGRAMMABLE_FULL="STATIC_SINGLE",PROG_FULL_ASSERT=128,PROG_FULL_NEGATE=128,PROGRAMMABLE_EMPTY="NONE",PROG_EMPTY_ASSERT=0,PROG_EMPTY_NEGATE=2,ASYM_WIDTH_RATIO=1)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "FIFO_W64R8" begin
+INFO     : ... Hierarchical pre-synthesis "FIFO_W64R8" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "Line_Shift_RAM_8Bit(DATA_DEPTH=14'b011110000000)" begin
+INFO     : ... Hierarchical pre-synthesis "Line_Shift_RAM_8Bit(DATA_DEPTH=14'b011110000000)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "Line_Shift_RAM_8Bit(DATA_DEPTH=14'b011110000000,DELAY_NUM=1)" begin
+INFO     : ... Hierarchical pre-synthesis "Line_Shift_RAM_8Bit(DATA_DEPTH=14'b011110000000,DELAY_NUM=1)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "VIP_Matrix_Generate_3X3_8Bit(IMG_HDISP=14'b011110000000,IMG_VDISP=14'b010000111000)" begin
+INFO     : ... Hierarchical pre-synthesis "VIP_Matrix_Generate_3X3_8Bit(IMG_HDISP=14'b011110000000,IMG_VDISP=14'b010000111000)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "VIP_RAW8_RGB888(IMG_HDISP=14'b011110000000,IMG_VDISP=14'b010000111000)" begin
+INFO     : ... Hierarchical pre-synthesis "VIP_RAW8_RGB888(IMG_HDISP=14'b011110000000,IMG_VDISP=14'b010000111000)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "sc2210_raw8_to_rgbx2" begin
+INFO     : ... Hierarchical pre-synthesis "sc2210_raw8_to_rgbx2" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "color_detector(FAST_LOCK_LINE_STREAK_NEW=4'b0100,FAST_LOCK_LINE_STREAK_SWITCH=4'b0100)" begin
+INFO     : ... Hierarchical pre-synthesis "color_detector(FAST_LOCK_LINE_STREAK_NEW=4'b0100,FAST_LOCK_LINE_STREAK_SWITCH=4'b0100)" end (Real time : 1s)
+INFO     : ... Hierarchical pre-synthesis "shape_scanner" begin
+INFO     : ... Hierarchical pre-synthesis "shape_scanner" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "shape_classifier" begin
+INFO     : ... Hierarchical pre-synthesis "shape_classifier" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "shape_page_ctrl(BUTTON_DEBOUNCE_MAX=21'b0100000)" begin
+INFO     : ... Hierarchical pre-synthesis "shape_page_ctrl(BUTTON_DEBOUNCE_MAX=21'b0100000)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "shape_recognition_core(SHAPE_PAGE_BTN_DEBOUNCE_MAX=21'b0100000)" begin
+INFO     : ... Hierarchical pre-synthesis "shape_recognition_core(SHAPE_PAGE_BTN_DEBOUNCE_MAX=21'b0100000)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "hdmi_timing_640x480" begin
+INFO     : ... Hierarchical pre-synthesis "hdmi_timing_640x480" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "ui_mode_latch" begin
+INFO     : ... Hierarchical pre-synthesis "ui_mode_latch" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "ui_color_renderer" begin
+INFO     : ... Hierarchical pre-synthesis "ui_color_renderer" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "ui_shape_renderer" begin
+INFO     : ... Hierarchical pre-synthesis "ui_shape_renderer" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "font_rom_ui" begin
+INFO     : ... Wide MUX mapping to ram-net, output: 'data' select size : 9 output width: 8
+INFO     : ... Hierarchical pre-synthesis "font_rom_ui" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "ui_font_overlay" begin
+INFO     : ... Hierarchical pre-synthesis "ui_font_overlay" end (Real time : 9s)
+INFO     : ... Hierarchical pre-synthesis "reset(OUT_RST_ACTIVE="LOW",CYCLE=3)" begin
+INFO     : ... Hierarchical pre-synthesis "reset(OUT_RST_ACTIVE="LOW",CYCLE=3)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "vid_info_det" begin
+INFO     : ... Hierarchical pre-synthesis "vid_info_det" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "color_bar_rgb(SYMBOL_WIDTH=8,SYMBOL_NUM=3,PAR_PIXEL_NUM=1,HFP=8'b01111000,HST=8'b010,HACT=12'b011110000000,HBP=8'b01011000,VFP=8'b010100,VST=8'b010,VACT=12'b011000000000,VBP=8'b010100,TEST_MODE=2'b01)" begin
+INFO     : ... Hierarchical pre-synthesis "color_bar_rgb(SYMBOL_WIDTH=8,SYMBOL_NUM=3,PAR_PIXEL_NUM=1,HFP=8'b01111000,HST=8'b010,HACT=12'b011110000000,HBP=8'b01011000,VFP=8'b010100,VST=8'b010,VACT=12'b011000000000,VBP=8'b010100,TEST_MODE=2'b01)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "encode" begin
+INFO     : ... Hierarchical pre-synthesis "encode" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "dvi_encoder" begin
+INFO     : ... Hierarchical pre-synthesis "dvi_encoder" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "hdmi_top" begin
+INFO     : ... Hierarchical pre-synthesis "hdmi_top" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "hdmi_result_ui" begin
+INFO     : ... Hierarchical pre-synthesis "hdmi_result_ui" end (Real time : 1s)
+INFO     : ... Hierarchical pre-synthesis "simple_uart(CLK_FREQ=96000000,BAUD_RATE=1000000)" begin
+INFO     : ... Hierarchical pre-synthesis "simple_uart(CLK_FREQ=96000000,BAUD_RATE=1000000)" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "top_t35" begin
+WARNING  : Mapping into logic memory block 'u_shape_recognition_core/shape_bg_grid_ram' (14400 bits) (F:\FPGA_NEW\111\src\vision\shape_recognition_core.v:201) because read port is not synchronous. [EFX-0657]
+INFO     : ... Clock Enable Synthesis Performed on 676 flops.
+INFO     : ... Hierarchical pre-synthesis "top_t35" end (Real time : 6s)
+INFO     : ... Flat optimizations begin
+INFO     : ... Flat optimizations end (Real time : 0s)
+INFO     : ... Flat synthesis begin
+INFO     : ... Flat synthesis end (Real time : 0s)
+INFO     : ... Flat optimizations begin
+INFO     : ... Flat optimizations end (Real time : 0s)
+INFO     : ... Check and break combinational loops begin
+INFO     : ... Check and break combinational loops end (Real time : 0s)
+INFO     : ... Sequential Optimization begin
+INFO     : ... Clock Network 'mipi_pixclk_i' with 5947 loads will be considered for sequential optimization.
+INFO     : ... Clock Network 'hdmi_clk1x_i' with 450 loads will be considered for sequential optimization.
+INFO     : ... Clock Network 'Axi0Clk' with 124 loads will be considered for sequential optimization.
+INFO     : ... Clock Network 'hdmi_clk2x_i' with 33 loads will be considered for sequential optimization.
+INFO     : ... Sequential Optimization deduced 2476 equivalent points.
+INFO     : ... Sequential Optimization end (Real time : 9s)
+INFO     : ... Setup for logic synthesis begin
+INFO     : ... Setup for logic synthesis end (Real time : 0s)
+INFO     : ... LUT mapping begin
+INFO     : ... LS, strategy: 3, nd: 9203, ed: 30647, lv: 16, pw: 14634.07
+INFO     : ... LUT mapping end (Real time : 23s)
+INFO     : ... Post-synthesis Verific netlist creation begin
+INFO     : ... Post-synthesis Verific netlist creation end (Real time : 0s)
+INFO     : ... Postmap Retiming Optimization begin
+INFO     : ... Clock Network 'mipi_pixclk_i~mipi_pixclk_i' with 5927 loads will be considered for retiming optimization.
+INFO     : ... Clock Network 'hdmi_clk1x_i~hdmi_clk1x_i' with 446 loads will be considered for retiming optimization.
+INFO     : ... Clock Network 'Axi0Clk~Axi0Clk' with 110 loads will be considered for retiming optimization.
+INFO     : ... Clock Network 'hdmi_clk2x_i~hdmi_clk2x_i' with 33 loads will be considered for retiming optimization.
+INFO     : ... Performed 7 retime moves.
+INFO     : ... Postmap Retiming Optimization end (Real time : 1s)
+INFO     : ***** Beginning VDB Netlist Checker ... *****
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(4): Input/inout port AxiPllClkIn is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(5): Input/inout port DdrPllClkIn is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(11): Input/inout port mipi_clkcal_i is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(12): Input/inout port mipi_clkesc_i is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(16): Input/inout port hdmi_clk5x_i is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(18): Input/inout port tx_slowclk is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(19): Input/inout port tx_fastclk is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(20): Input/inout port PllLocked[0] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(35): Input/inout port DdrCtrl_AREADY_0 is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(43): Input/inout port DdrCtrl_WREADY_0 is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(45): Input/inout port DdrCtrl_RID_0[7] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(46): Input/inout port DdrCtrl_RDATA_0[127] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(47): Input/inout port DdrCtrl_RLAST_0 is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(48): Input/inout port DdrCtrl_RVALID_0 is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(50): Input/inout port DdrCtrl_RRESP_0[1] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(52): Input/inout port DdrCtrl_BID_0[7] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(53): Input/inout port DdrCtrl_BVALID_0 is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(69): Input/inout port uart_rxd is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(71): Input/inout port mipi0_scl_i is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(75): Input/inout port mipi0_sda_i is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(79): Input/inout port mipi1_scl_i is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(83): Input/inout port mipi1_sda_i is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(99): Input/inout port mipi_rx_0_VC_i[1] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(100): Input/inout port mipi_rx_0_VSYNC_i[3] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(101): Input/inout port mipi_rx_0_HSYNC_i[3] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(103): Input/inout port mipi_rx_0_CNT_i[3] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(104): Input/inout port mipi_rx_0_TYPE_i[5] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(107): Input/inout port mipi_rx_1_VC_i[1] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(108): Input/inout port mipi_rx_1_VSYNC_i[3] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(109): Input/inout port mipi_rx_1_HSYNC_i[3] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(110): Input/inout port mipi_rx_1_DATA_i[63] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(111): Input/inout port mipi_rx_1_CNT_i[3] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(112): Input/inout port mipi_rx_1_TYPE_i[5] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(113): Input/inout port mipi_rx_1_VALID_i is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(115): Input/inout port mipi_rx_0_ULPS[3] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(116): Input/inout port mipi_rx_0_ULPS_CLK is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(118): Input/inout port mipi_rx_0_ERROR[17] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(120): Input/inout port mipi_rx_1_ULPS[3] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(121): Input/inout port mipi_rx_1_ULPS_CLK is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : F:\FPGA_NEW\111\src\top_t35.v(123): Input/inout port mipi_rx_1_ERROR[17] is unconnected. Place and route may remove this unconnected port. [VDB-8003]
+WARNING  : Found 314 warnings in the post-synthesis netlist.
+INFO     : VDB Netlist Checker took 0.0147801 seconds [FlowMsg::StageDuration]
+INFO     :     VDB Netlist Checker took 0.015625 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : VDB Netlist Checker virtual memory usage: begin = 270.096 MB, end = 270.172 MB, delta = 0.076 MB [FlowMsg::VMUsage]
+INFO     :     VDB Netlist Checker peak virtual memory usage = 380.832 MB [FlowMsg::VMUsage::Peak]
+INFO     : VDB Netlist Checker resident set memory usage: begin = 283.556 MB, end = 283.688 MB, delta = 0.132 MB [FlowMsg::RSSUsage]
+INFO     :     VDB Netlist Checker peak resident set memory usage = 380.076 MB [FlowMsg::RSSUsage::Peak]
+INFO     : ***** Ending VDB Netlist Checker ... *****
+INFO     : Resource Summary 
+INFO     : =============================== 
+INFO     : EFX_ADD         : 	1010
+INFO     : EFX_LUT4        : 	9199
+INFO     : EFX_FF          : 	6631
+INFO     : EFX_RAM_5K      : 	24
+INFO     : EFX_GBUFCE      : 	4
+INFO     : =============================== 
+INFO     : ... Post-Map Verilog Writer begin
+INFO     : Writing netlist 'top_t35' to Verilog file 'F:/FPGA_NEW/111/outflow/mem_test.map.v' [VDB-1030]
+INFO     : ... Post-Map Verilog Writer end (Real time : 0s)
+INFO     : The entire flow of EFX_MAP took 53.0003157 seconds [FlowMsg::StageDuration]
+INFO     :     The entire flow of EFX_MAP took 68.015625 seconds (approximately) in total CPU time [FlowMsg::StageDuration::CPUTime]
+INFO     : The entire flow of EFX_MAP virtual memory usage: begin = 18.5 MB, end = 276.004 MB, delta = 257.504 MB [FlowMsg::VMUsage]
+INFO     :     The entire flow of EFX_MAP peak virtual memory usage = 380.832 MB [FlowMsg::VMUsage::Peak]
+INFO     : The entire flow of EFX_MAP resident set memory usage: begin = 18.212 MB, end = 289.184 MB, delta = 270.972 MB [FlowMsg::RSSUsage]
+INFO     :     The entire flow of EFX_MAP peak resident set memory usage = 380.076 MB [FlowMsg::RSSUsage::Peak]

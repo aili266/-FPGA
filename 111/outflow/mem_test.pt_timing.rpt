@@ -1,0 +1,108 @@
+
+Efinity Interface Designer Timing Report
+Version: 2025.2.288
+Date: 2026-06-27 14:07
+
+Copyright (C) 2013 - 2025 Efinix Inc. All rights reserved.
+
+Device: T35F324
+Project: mem_test
+Timing Model: C4 (final)
+
+---------- 1. PLL Timing Report (begin) ----------
+
++--------------+----------+-----------------+--------------------------+----------+-------------------+---------------------------------+---------------------------------+
+| PLL Instance | Resource | Reference Clock | Core Clock Reference Pin | FB Mode  | Core Feedback Pin | PLL Compensation Delay Max (ns) | PLL Compensation Delay Min (ns) |
++--------------+----------+-----------------+--------------------------+----------+-------------------+---------------------------------+---------------------------------+
+|   MipiPLL    | PLL_BL0  |       core      |  tx_slowclk~CLKOUT~3~1   | internal |                   |               N/A               |               N/A               |
+|    DdrPLL    | PLL_BR0  |     external    |                          | internal |                   |               N/A               |               N/A               |
+|   HdmiPLL    | PLL_BR1  |       core      | tx_slowclk~CLKOUT~124~1  | internal |                   |               N/A               |               N/A               |
+|    AxiPLL    | PLL_TR0  |     external    |                          | internal |                   |               N/A               |               N/A               |
++--------------+----------+-----------------+--------------------------+----------+-------------------+---------------------------------+---------------------------------+
+
++---------------+-------------+-----------------------+
+|     Clock     | Period (ns) | Phase Shift (degrees) |
++---------------+-------------+-----------------------+
+| mipi_clkesc_i |    50.000   |           0           |
+| mipi_clkcal_i |    10.000   |           0           |
+| mipi_pixclk_i |    10.000   |           0           |
+|    Axi0Clk    |    2.506    |           0           |
+|    clk_cmos   |    37.594   |           0           |
+|  hdmi_clk1x_i |    39.683   |           0           |
+|  hdmi_clk2x_i |    19.841   |           0           |
+|  hdmi_clk5x_i |    7.937    |           90          |
+|    Axi0Clk    |    10.417   |           0           |
+|   tx_slowclk  |    20.833   |           0           |
+|   tx_fastclk  |    5.952    |           90          |
++---------------+-------------+-----------------------+
+
+---------- PLL Timing Report (end) ----------
+
+---------- 2. GPIO Timing Report (begin) ----------
+
+Non-registered GPIO Configuration:
+===================================
+
++---------------+-------------+-----------+----------+----------+
+| Instance Name |   Pin Name  | Parameter | Max (ns) | Min (ns) |
++---------------+-------------+-----------+----------+----------+
+|  AxiPllClkIn  | AxiPllClkIn |  GPIO_IN  |  1.589   |  0.795   |
+|  DdrPllClkIn  | DdrPllClkIn |  GPIO_IN  |  1.589   |  0.795   |
+|  led_data[0]  | led_data[0] |  GPIO_OUT |  3.829   |  1.915   |
+|  led_data[1]  | led_data[1] |  GPIO_OUT |  3.829   |  1.915   |
+|  led_data[2]  | led_data[2] |  GPIO_OUT |  3.829   |  1.915   |
+|  led_data[3]  | led_data[3] |  GPIO_OUT |  3.829   |  1.915   |
+|  led_data[4]  | led_data[4] |  GPIO_OUT |  3.829   |  1.915   |
+|  led_data[5]  | led_data[5] |  GPIO_OUT |  3.829   |  1.915   |
+|  led_data[6]  | led_data[6] |  GPIO_OUT |  3.829   |  1.915   |
+|  led_data[7]  | led_data[7] |  GPIO_OUT |  3.829   |  1.915   |
++---------------+-------------+-----------+----------+----------+
+
+---------- GPIO Timing Report (end) ----------
+
+---------- 3. LVDS Rx Timing Report (begin) ----------
+
+Non-registered LVDS GPIO Configuration:
+========================================
+
++----------------+----------------+-----------+----------+----------+
+| Instance Name  |    Pin Name    | Parameter | Max (ns) | Min (ns) |
++----------------+----------------+-----------+----------+----------+
+|    uart_rxd    |    uart_rxd    |  GPIO_IN  |  1.714   |  0.857   |
+| mipi_trig_o[0] | mipi_trig_o[0] |  GPIO_OUT |  3.542   |  1.771   |
+| mipi_trig_o[1] | mipi_trig_o[1] |  GPIO_OUT |  3.542   |  1.771   |
+|    uart_txd    |    uart_txd    |  GPIO_OUT |  3.542   |  1.771   |
+|  mipi0_scl_io  |  mipi0_scl_i   |  GPIO_IN  |  1.714   |  0.857   |
+|  mipi0_scl_io  |  mipi0_scl_o   |  GPIO_OUT |  3.542   |  1.771   |
+|  mipi0_scl_io  |  mipi0_scl_oe  |  GPIO_OUT |  3.500   |  1.750   |
+|  mipi0_sda_io  |  mipi0_sda_i   |  GPIO_IN  |  1.714   |  0.857   |
+|  mipi0_sda_io  |  mipi0_sda_o   |  GPIO_OUT |  3.542   |  1.771   |
+|  mipi0_sda_io  |  mipi0_sda_oe  |  GPIO_OUT |  3.500   |  1.750   |
+|  mipi1_scl_io  |  mipi1_scl_i   |  GPIO_IN  |  1.714   |  0.857   |
+|  mipi1_scl_io  |  mipi1_scl_o   |  GPIO_OUT |  3.542   |  1.771   |
+|  mipi1_scl_io  |  mipi1_scl_oe  |  GPIO_OUT |  3.500   |  1.750   |
+|  mipi1_sda_io  |  mipi1_sda_i   |  GPIO_IN  |  1.714   |  0.857   |
+|  mipi1_sda_io  |  mipi1_sda_o   |  GPIO_OUT |  3.542   |  1.771   |
+|  mipi1_sda_io  |  mipi1_sda_oe  |  GPIO_OUT |  3.500   |  1.750   |
++----------------+----------------+-----------+----------+----------+
+
+---------- LVDS Rx Timing Report (end) ----------
+
+---------- 4. LVDS Tx Timing Report (begin) ----------
+
+---------- LVDS Tx Timing Report (end) ----------
+
+---------- 4. Clock Network Delay Report (begin) ----------
+
++---------------+----------+----------+
+|   Clock Pin   | Max (ns) | Min (ns) |
++---------------+----------+----------+
+|    Axi0Clk    |  4.310   |  2.155   |
+|  hdmi_clk2x_i |  4.310   |  2.155   |
+|  hdmi_clk5x_i |  4.310   |  2.155   |
+| mipi_clkcal_i |  4.310   |  2.155   |
+| mipi_pixclk_i |  4.310   |  2.155   |
+|   tx_slowclk  |  4.310   |  2.155   |
++---------------+----------+----------+
+
+---------- Clock Network Delay Report (end) ----------
